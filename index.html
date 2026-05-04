@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我们的纪念日 ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 装饰云朵 -->
+    <div class="clouds">
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+    </div>
+
+    <!-- 顶部装饰星星 -->
+    <div class="stars">
+        <span class="star">✦</span>
+        <span class="star">✦</span>
+        <span class="star">✦</span>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+        <h1 class="title">
+            <span class="title-icon">🎀</span>
+            我们的纪念日
+            <span class="title-icon">❤️</span>
+        </h1>
+        <p class="subtitle" id="days-counter">记录我们的点点滴滴</p>
+        </div>
+    </header>
+
+    <!-- Timeline -->
+    <main class="timeline-container">
+        <div class="timeline" id="timeline">
+            <!-- 时间轴内容由 JS 动态渲染 -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with <span class="heart">❤️</span> for CC</p>
+        <p class="footer-dora">🎀 哆啦A梦的蓝白红 🎀</p>
+    </footer>
+
+    <!-- 灯箱 -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close">×</button>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="">
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
