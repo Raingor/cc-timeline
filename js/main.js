@@ -20,7 +20,7 @@ const timelineData = [
         date: '2026年3月28日',
         title: '第一次聊天',
         content: '"粤ba"的赛事，让广州队不敌中山队，却也给了我一个完美的借口——问CC中山有什么好吃的。她耐心地推荐，而我，借着这份闲聊，踏上了开往中山的列车。她下午还要给学生上课，我便先到了，尝了亚金金，喝了下午茶，心中默默期待着与她的第一次见面 ☕',
-        images: ['images/3_28_1.jpg', 'images/3_28_2.jpg'],
+        images: ['images/3_28_1.webp', 'images/3_28_2.webp'],
         special: false
     },
     {
@@ -36,7 +36,7 @@ const timelineData = [
         date: '2026年3月28日',
         title: '夜风中的畅聊',
         content: '我们在一家特调店里坐下来，聊着彼此的故事。夜晚的微风轻轻吹过，她安静地倾听，我也愿意分享。那一刻，无比放松与自由——终于有人愿意倾听我的故事，也有人愿意和我一起分享快乐 🍃',
-        images: ['images/3_28_special.jpg'],
+        images: ['images/3_28_special.webp'],
         special: false
     },
     {
@@ -44,7 +44,7 @@ const timelineData = [
         date: '2026年3月28日',
         title: '宵夜时光',
         content: '临别前，去了大墩荣记吃宵夜。其实已经很饱了，但那晚的美食与欢声笑语，让一切都刚刚好。这家店，真的很好吃～ 🍜',
-        images: ['images/3_28_snack.jpg'],
+        images: ['images/3_28_snack.webp'],
         special: false
     },
     {
@@ -52,7 +52,7 @@ const timelineData = [
         date: '2026年4月4日',
         title: '顺德寻味',
         content: '清明假期，我们一起去了顺德。吃了念念不忘的排骨饭，逛了金榜街，尝了双皮奶等甜品。那晚，我悄悄记住了——她喜欢双皮奶这件事 🍮',
-        images: ['images/4_4_1.jpg', 'images/4_4_2.jpg', 'images/4_4_3.jpg', 'images/4_4_4.jpg'],
+        images: ['images/4_4_1.webp', 'images/4_4_2.webp', 'images/4_4_3.webp', 'images/4_4_4.webp'],
         special: false
     },
     {
@@ -76,7 +76,7 @@ const timelineData = [
         date: '2026年4月11日',
         title: '表白',
         content: '表白前，我就为她准备了一份礼物——沙漏。因为她说她经常发呆，看着沙漏流沙发呆的样子一定很美，我想帮她留住那些美好的发呆时光。早上约她喝早茶，心情紧张得不行。逛到宁徽园时，一直在找时机，终于鼓起勇气表白，表明了心意。这一天，我们确认了关系，正式成为男女朋友 ❤️',
-        images: ['images/4_11_confession.jpg'],
+        images: ['images/4_11_confession.webp'],
         special: true
     },
     {
@@ -84,7 +84,7 @@ const timelineData = [
         date: '2026年4月18日',
         title: '花世界里的约会',
         content: '第一次以情侣身份出行！我们去了顺德的陈村花卉世界，看到了各种各样的兰花，大大小小的话和盆栽。空气好清新，好安静，好舒服，充满氧气的一天 🌿',
-        images: ['images/4_18_1.jpg', 'images/4_18_2.jpg', 'images/4_18_3.jpg'],
+        images: ['images/4_18_1.webp', 'images/4_18_2.webp', 'images/4_18_3.webp'],
         special: false
     },
     {
@@ -92,7 +92,7 @@ const timelineData = [
         date: '2026年4月18日',
         title: '时光街的哆啦A梦',
         content: '一直逛到下午四点，我们来到了潭州98时光街——一个有年代感的巷子街。这才是这次来顺德的真正目的，我们本是奔着一群哆啦A梦而来的。走了一圈没找到，问了本地阿姨，又凭着CC的感觉走进更深的巷子——终于找到了！ 🎈',
-        images: ['images/4_18_dora_1.jpg', 'images/4_18_dora_2.jpg', 'images/4_18_dora_3.jpg', 'images/4_18_dora_4.jpg'],
+        images: ['images/4_18_dora_1.webp', 'images/4_18_dora_2.webp', 'images/4_18_dora_3.webp', 'images/4_18_dora_4.webp'],
         special: false
     },
     {
@@ -100,7 +100,7 @@ const timelineData = [
         date: '2026年4月18日',
         title: '黄姨甜品店',
         content: '时光街很小，看完就去了下一站——顺德的黄姨甜品店。点了双皮奶、炖蛋、凉拌鱼皮，味道都很不错，就是偏甜了点。或许是恋爱的味道吧，显得更甜了～ 🍮',
-        images: ['images/4_18_sweet_1.jpg', 'images/4_18_sweet_2.jpg', 'images/4_18_sweet_3.jpg'],
+        images: ['images/4_18_sweet_1.webp', 'images/4_18_sweet_2.webp', 'images/4_18_sweet_3.webp'],
         special: false
     },
     {
@@ -116,7 +116,7 @@ const timelineData = [
         date: '2026年4月18日',
         title: '一起看球赛',
         content: '顺利买下旋转木马后，CC问附近有没有MINISO，我想着大商场应该有吧。逛着逛着买了点东西，等阿嬷手作茶的时候，我顺手打开了粤BA直播——刚好是中山队对佛山队！CC是中山人，我们一起紧张地看完了整场，比分咬得很紧，最后中山队赢了，我们一起欢呼 🏀',
-        images: ['images/4_18_ruin_1.jpg', 'images/4_18_ruin_2.jpg'],
+        images: ['images/4_18_ruin_1.webp', 'images/4_18_ruin_2.webp'],
         special: false
     },
     {
@@ -124,7 +124,7 @@ const timelineData = [
         date: '2026年4月19日',
         title: '悄悄准备的惊喜',
         content: '第二天周日，我突然想起CC为什么会问MINISO——她喜欢自嘲熊，上次还给我转发过广州北京路门店的自嘲熊活动。想着周边只有那家有，我立马出发去排队。随机抽了两个盲盒，等着下周和她一起拆，分享盲盒的快乐 🎁',
-        images: ['images/4_19_miniso_1.jpg', 'images/4_19_miniso_2.jpg', 'images/4_19_miniso_3.jpg', 'images/4_19_miniso_4.jpg'],
+        images: ['images/4_19_miniso_1.webp', 'images/4_19_miniso_2.webp', 'images/4_19_miniso_3.webp', 'images/4_19_miniso_4.webp'],
         special: false
     },
     {
@@ -140,7 +140,7 @@ const timelineData = [
         date: '2026年4月25日',
         title: '第一次合照',
         content: '后来我们去了兴中广场的摩天轮，坐了一圈，欣赏着夜景。那一刻，我们迎来了第一次合照，定格了这个夜晚的浪漫 🎡',
-        images: ['images/4_25_ferris_1.jpg', 'images/4_25_ferris_2.jpg', 'images/4_25_ferris_3.jpg', 'images/4_25_ferris_4.jpg'],
+        images: ['images/4_25_ferris_1.webp', 'images/4_25_ferris_2.webp', 'images/4_25_ferris_3.webp', 'images/4_25_ferris_4.webp'],
         special: false
     },
     {
@@ -148,7 +148,7 @@ const timelineData = [
         date: '2026年4月26日',
         title: '第一次接她下班',
         content: '这天，我去接CC下班，晚上一起去了樱花里吃Party泰。第一次接她下班，心里有种说不出的甜蜜感～ 🌸',
-        images: ['images/4_26_thai_1.jpg', 'images/4_26_thai_2.jpg', 'images/4_26_thai_3.jpg'],
+        images: ['images/4_26_thai_1.webp', 'images/4_26_thai_2.webp', 'images/4_26_thai_3.webp'],
         special: false
     },
     {
@@ -156,7 +156,7 @@ const timelineData = [
         date: '2026年4月26日',
         title: '甜到心里的糖水',
         content: '后来坐着CC的摩托车去吃了糖水。糖水很甜，但和你在一起的时候，每一刻都是幸福和甜甜的～ 🍡',
-        images: ['images/4_26_sweet_1.jpg'],
+        images: ['images/4_26_sweet_1.webp'],
         special: false
     },
     {
@@ -164,7 +164,7 @@ const timelineData = [
         date: '2026年4月29日',
         title: '旋转木马完工',
         content: 'CC把旋转木马拼好了！看着她认真拼装的样子，觉得这不仅仅是一个礼物，更是一份心意的呈现。拼好的那一刻，一定很满足吧～ 🎠',
-        images: ['images/4_29_carousel.jpg'],
+        images: ['images/4_29_carousel.webp'],
         special: false
     },
     {
@@ -172,7 +172,7 @@ const timelineData = [
         date: '2026年5月2日',
         title: '江门茶坑寻陈皮',
         content: '我们一起去了江门！第一站是茶坑，造访陈皮之乡，品一品这里独特的陈皮香气。还收到了大 VIC 鸡和手作的千层糕，满载而归～在茶坑吃了陈皮糯米糍、陈皮饼，喝了陈皮水、陈皮红豆糖水，浑身都是陈皮味了 🍊',
-        images: ['images/5_2_jm_1.jpg', 'images/5_2_jm_2.jpg', 'images/5_2_jm_3.jpg', 'images/5_2_jm_4.jpg', 'images/5_2_jm_5.jpg', 'images/5_2_jm_6.jpg', 'images/5_2_jm_7.jpg'],
+        images: ['images/5_2_jm_1.webp', 'images/5_2_jm_2.webp', 'images/5_2_jm_3.webp', 'images/5_2_jm_4.webp', 'images/5_2_jm_5.webp', 'images/5_2_jm_6.webp', 'images/5_2_jm_7.webp'],
         special: false
     },
     {
@@ -180,7 +180,7 @@ const timelineData = [
         date: '2026年5月2日',
         title: '梁启超故居',
         content: '我们还一起参观了梁启超故居，了解了那段精彩的历史，还在里面学习了陈皮的文化与知识。一天下来收获满满，真的是学东西的一天～ 📜🍊',
-        images: ['images/5_2_liang_1.jpg', 'images/5_2_liang_2.jpg', 'images/5_2_liang_3.jpg', 'images/5_2_liang_4.jpg'],
+        images: ['images/5_2_liang_1.webp', 'images/5_2_liang_2.webp', 'images/5_2_liang_3.webp', 'images/5_2_liang_4.webp'],
         special: false
     },
     {
@@ -188,7 +188,7 @@ const timelineData = [
         date: '2026年5月2日',
         title: '学宫文化街Citywalk',
         content: '马不停蹄，我们又走了小红书推荐的Citywalk路线——学宫、文化馆、学院街，一路走下去。可惜最后的图书馆没开门，但一点也不影响两个人一起的心情～ 🏛️',
-        images: ['images/5_2_xuegong_1.jpg', 'images/5_2_xuegong_2.jpg', 'images/5_2_xuegong_3.jpg', 'images/5_2_xuegong_4.jpg', 'images/5_2_xuegong_5.jpg'],
+        images: ['images/5_2_xuegong_1.webp', 'images/5_2_xuegong_2.webp', 'images/5_2_xuegong_3.webp', 'images/5_2_xuegong_4.webp', 'images/5_2_xuegong_5.webp'],
         special: false
     },
     {
@@ -196,7 +196,7 @@ const timelineData = [
         date: '2026年5月2日',
         title: '街角的牛杂小铺',
         content: 'Citywalk途中经过一家超级小的牛杂店，门面不起眼，却挤满了本地人。端上来一碗热腾腾的牛杂，那个浓郁的汤底和软糯的口感，真的绝了！这种藏在巷子里的小店，才是城市的味道呀～ 🍲',
-        images: ['images/5_2_beef_1.jpg', 'images/5_2_beef_2.jpg', 'images/5_2_beef_3.jpg'],
+        images: ['images/5_2_beef_1.webp', 'images/5_2_beef_2.webp', 'images/5_2_beef_3.webp'],
         special: false
     },
     {
@@ -212,7 +212,7 @@ const timelineData = [
         date: '2026年5月2日',
         title: '安静小店的特调时光',
         content: '回到小榄后，我们找了一家安安静静的小店，点了特调和气泡水，享受属于两个人的慢时光～ 门口还蹲着一只超可爱的小狗，CC忍不住一直逗它，少女心爆棚！🐶💕',
-        images: ['images/5_2_dog_1.jpg', 'images/5_2_shop_1.jpg', 'images/5_2_shop_2.jpg', 'images/5_2_shop_3.jpg'],
+        images: ['images/5_2_dog_1.webp', 'images/5_2_shop_1.webp', 'images/5_2_shop_2.webp', 'images/5_2_shop_3.webp'],
         special: false
     },
     {
@@ -220,7 +220,7 @@ const timelineData = [
         date: '2026年5月3日',
         title: '陪CC看心理医生',
         content: '今天陪CC去看心理医生，她在努力和过去的焦虑和解。我只想陪在她身边，和她一起慢慢走出来。过去的事就让它过去吧，未来CC是我的，她的每一个世界，我都想参与 💕',
-        images: ['images/5_3_1.jpg'],
+        images: ['images/5_3_1.webp'],
         special: false
     },
     {
@@ -228,7 +228,7 @@ const timelineData = [
         date: '2026年5月3日',
         title: '拉面里的悄悄话',
         content: '后来CC说想吃拉面，我一开始没想太多。直到刚才翻聊天记录才发现……原来那是我某次随口提的一句。她竟然记在心里，一直等着和我一起来吃。CC，谢谢你把我放在心上，我也是 💕',
-        images: ['images/5_3_ramen_1.jpg', 'images/5_3_ramen_2.jpg', 'images/5_3_ramen_3.jpg', 'images/5_3_ramen_4.jpg'],
+        images: ['images/5_3_ramen_1.webp', 'images/5_3_ramen_2.webp', 'images/5_3_ramen_3.webp', 'images/5_3_ramen_4.webp'],
         special: false
     },
     {
@@ -236,7 +236,7 @@ const timelineData = [
         date: '2026年5月3日',
         title: '回到最初的地方',
         content: '这次换我带CC回到最初的地方——亚金金和55号咖啡店，都是她当初推荐给我的小店。陪她重游故地，一起看我当时喝过的饮品，一起看粤BA中山对广州的回放。虽然早知道结果，依然看得热血沸腾！仿佛回到最初遇见她的时候 💕',
-        images: ['images/5_3_55_1.jpg', 'images/5_3_55_2.jpg', 'images/5_3_55_3.jpg', 'images/5_3_55_4.jpg', 'images/5_3_55_5.jpg', 'images/5_3_55_6.jpg'],
+        images: ['images/5_3_55_1.webp', 'images/5_3_55_2.webp', 'images/5_3_55_3.webp', 'images/5_3_55_4.webp', 'images/5_3_55_5.webp', 'images/5_3_55_6.webp'],
         special: false
     },
     {
@@ -252,7 +252,7 @@ const timelineData = [
         date: '2026年5月3日',
         title: '小伞大情话',
         content: '便利店买的所谓大伞，结果还是小得可怜～ 两个人挤在一把小伞下，紧紧靠在一起走到了假日广场。绕了一圈都不满意，最后进了「慢顿顿」吃了个雪糕，简简单单却甜到心里 🍦💕',
-        images: ['images/5_3_mdt_1.jpg', 'images/5_3_mdt_2.jpg', 'images/5_3_mdt_3.jpg', 'images/5_3_mdt_4.jpg', 'images/5_3_mdt_5.jpg', 'images/5_3_mdt_6.jpg'],
+        images: ['images/5_3_mdt_1.webp', 'images/5_3_mdt_2.webp', 'images/5_3_mdt_3.webp', 'images/5_3_mdt_4.webp', 'images/5_3_mdt_5.webp', 'images/5_3_mdt_6.webp'],
         special: false
     },
     {
