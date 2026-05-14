@@ -428,6 +428,45 @@ body {
     margin-top: 15px;
 }
 
+.image-wrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.image-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--gray-200);
+    transition: opacity 0.3s ease;
+}
+
+.image-placeholder.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.placeholder-spinner {
+    width: 30px;
+    height: 30px;
+    border: 3px solid var(--dora-blue-light);
+    border-top-color: var(--dora-blue);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
 .timeline-image {
     width: 120px;
     height: 120px;
@@ -436,6 +475,11 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     border: 2px solid var(--gray-200);
+    opacity: 0;
+}
+
+.timeline-image.loaded {
+    opacity: 1;
 }
 
 .timeline-image:hover {
@@ -445,6 +489,7 @@ body {
 }
 
 @media (max-width: 768px) {
+    .image-wrapper,
     .timeline-image {
         width: 100px;
         height: 100px;

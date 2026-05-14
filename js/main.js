@@ -346,13 +346,17 @@ function renderTimeline() {
                 ${item.images.length > 0 ? `
                     <div class="timeline-images">
                         ${item.images.map(img => `
-                            <img
-                                src="${img}"
-                                alt="${item.title}"
-                                class="timeline-image"
-                                onclick="openLightbox('${img}')"
-                                onerror="this.style.display='none'; this.insertAdjacentHTML('afterend', '<small style=\'color:#999;\'>（图片加载失败）</small>')"
-                            >
+                            <div class="image-wrapper">
+                                <div class="image-placeholder">
+                                    <div class="placeholder-spinner"></div>
+                                </div>
+                                <img
+                                    data-src="${img}"
+                                    alt="${item.title}"
+                                    class="timeline-image lazy"
+                                    onclick="openLightbox('${img}')"
+                                >
+                            </div>
                         `).join('')}
                     </div>
                 ` : ''}
@@ -360,8 +364,8 @@ function renderTimeline() {
         </div>
     `).join('');
 
-    // 初始化滚动动画
     initScrollAnimation();
+    initLazyLoad();
 }
 
 // ============================================
@@ -385,6 +389,46 @@ function initScrollAnimation() {
     );
 
     items.forEach((item) => observer.observe(item));
+}
+
+function initLazyLoad() {
+    const lazyImages = document.querySelectorAll('img.lazy');
+
+    const imageObserver = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    const src = img.dataset.src;
+                    const wrapper = img.closest('.image-wrapper');
+                    const placeholder = wrapper?.querySelector('.image-placeholder');
+
+                    if (src) {
+                        img.src = src;
+                        img.onload = () => {
+                            img.classList.remove('lazy');
+                            img.classList.add('loaded');
+                            if (placeholder) {
+                                placeholder.classList.add('hidden');
+                            }
+                        };
+                        img.onerror = () => {
+                            if (placeholder) {
+                                placeholder.innerHTML = '<span style="color:#999;font-size:12px;">加载失败</span>';
+                            }
+                        };
+                    }
+                    observer.unobserve(img);
+                }
+            });
+        },
+        {
+            rootMargin: '100px 0px',
+            threshold: 0.01
+        }
+    );
+
+    lazyImages.forEach((img) => imageObserver.observe(img));
 }
 
 // ============================================
