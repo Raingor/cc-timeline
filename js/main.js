@@ -321,15 +321,15 @@ const timelineData = [
     },
     {
         id: 39,
-        date: '2026年5月19日',
-        title: '脆肉鲩的午后',
+        date: '2026年5月16日',
+        title: '脆肉的午后',
         content: '中午带着CC去吃脆肉鲩，这是炒的脆肉皖，虽然咸了点，可是也还行噢 🐟',
         images: ['images/5_19_1.webp'],
         special: false
     },
     {
         id: 40,
-        date: '2026年5月19日',
+        date: '2026年5月16日',
         title: '星巴克的高端人士梦',
         content: '下午她去补习，我去星巴克续命喝了杯星冰乐，想着可以像视频那种做个高端人士，敲着苹果电脑喝着星巴克的样子，然而这才是难受的开始 ☕💻',
         images: ['images/5_19_2.webp'],
@@ -337,7 +337,7 @@ const timelineData = [
     },
     {
         id: 41,
-        date: '2026年5月19日',
+        date: '2026年5月16日',
         title: 'kimoji店的小狗丫丫',
         content: '傍晚一起去了有小狗的kimoji店去点了小吃和特调微醺，我们还在店里镜子里一起合照咯～，CC好喜欢这家店的小狗，小狗名字叫丫丫，这场比赛看得激情，有来有回的 🐶🎉',
         images: ['images/5_19_3.webp', 'images/5_19_4.webp', 'images/5_19_5.webp', 'images/5_19_6.webp', 'images/5_19_7.webp', 'images/5_19_8.webp', 'images/5_19_9.webp', 'images/5_19_10.webp'],
@@ -345,7 +345,7 @@ const timelineData = [
     },
     {
         id: 42,
-        date: '2026年5月19日',
+        date: '2026年5月16日',
         title: '百富路的素菜与水牛奶',
         content: '看完比赛后，我们去了一家百富路的店吃了很好吃的素菜和，百富路的水牛奶，好甜，我以前好像就喝过的感觉 🥛🥬',
         images: ['images/5_19_11.webp', 'images/5_19_12.webp'],
