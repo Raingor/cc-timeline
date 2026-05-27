@@ -3,56 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我们的纪念日 ❤️</title>
+    <title>🚪 任意门 · 我们的纪念时光</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- 装饰云朵 -->
-    <div class="clouds">
-        <div class="cloud cloud-1"></div>
-        <div class="cloud cloud-2"></div>
-        <div class="cloud cloud-3"></div>
+
+    <!-- ===== 飘浮装饰元素 ===== -->
+    <div class="floating-decorations" aria-hidden="true">
+        <div class="deco deco-bell">🔔</div>
+        <div class="deco deco-copter">🐬</div>
+        <div class="deco deco-dorayaki">🍩</div>
+        <div class="deco deco-star">⭐</div>
+        <div class="deco deco-bell-2">🔔</div>
+        <div class="deco deco-copter-2">🐬</div>
     </div>
 
-    <!-- 顶部装饰星星 -->
-    <div class="stars">
-        <span class="star">✦</span>
-        <span class="star">✦</span>
-        <span class="star">✦</span>
-    </div>
+    <!-- ===== 月份导航 ===== -->
+    <nav class="month-nav" id="monthNav">
+        <div class="month-nav-inner">
+            <button class="month-nav-btn active" data-month="all">📋 全部</button>
+            <button class="month-nav-btn" data-month="3">🌸 3月</button>
+            <button class="month-nav-btn" data-month="4">🌿 4月</button>
+            <button class="month-nav-btn" data-month="5">☀️ 5月</button>
+        </div>
+    </nav>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="header-content">
-        <h1 class="title">
-            <span class="title-icon">🎀</span>
-            我们的纪念日
-            <span class="title-icon">❤️</span>
-        </h1>
-        <p class="subtitle" id="days-counter">记录我们的点点滴滴</p>
+    <!-- ===== 顶部 Hero ===== -->
+    <header class="hero" id="hero">
+        <div class="hero-bg-pattern"></div>
+        <div class="hero-content">
+            <div class="hero-doraemon">
+                <img src="images/doraemon.png" alt="哆啦A梦" class="hero-dora-img" loading="eager">
+                <div class="hero-dora-shadow"></div>
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-title-line">🚪 任意门</span>
+                <span class="hero-title-sub">我们的纪念时光</span>
+            </h1>
+            <p class="hero-counter" id="days-counter">Loading...</p>
+            <p class="hero-quote">「每一段回忆，都是我用任意门为你珍藏的宝物」</p>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V120L30,105C60,90,120,60,180,45C240,30,300,30,360,37.5C420,45,480,60,540,67.5C600,75,660,75,720,67.5C780,60,840,45,900,37.5C960,30,1020,30,1080,37.5C1140,45,1170,52.5,1200,60L1200,120H0V0Z" fill="var(--dora-bg)"/>
+            </svg>
         </div>
     </header>
 
-    <!-- Timeline -->
-    <main class="timeline-container">
+    <!-- ===== 时间轴主区域 ===== -->
+    <main class="main-content">
         <div class="timeline" id="timeline">
-            <!-- 时间轴内容由 JS 动态渲染 -->
+            <!-- 由 JS 渲染 -->
         </div>
+
+        <!-- 回到顶部 -->
+        <button class="back-to-top" id="backToTop" aria-label="回到顶部">🔝</button>
     </main>
 
-    <!-- Footer -->
+    <!-- ===== Footer ===== -->
     <footer class="footer">
-        <p>Made with <span class="heart">❤️</span> for CC</p>
-        <img src="images/doraemon.png" alt="哆啦A梦" class="footer-dora-img">
+        <div class="footer-inner">
+            <div class="footer-characters">
+                <span class="footer-chara footer-dora" aria-label="哆啦A梦">🐱</span>
+                <span class="footer-chara footer-heart">💕</span>
+                <span class="footer-chara footer-shizuka" aria-label="静香">👧</span>
+            </div>
+            <p class="footer-text">Made with <span class="heart">❤️</span> for CC</p>
+            <p class="footer-small">「我会用任意门，带你去看全世界的风景」</p>
+        </div>
     </footer>
 
-    <!-- 灯箱 -->
+    <!-- ===== 灯箱 ===== -->
     <div class="lightbox" id="lightbox">
-        <button class="lightbox-close" id="lightbox-close">×</button>
+        <button class="lightbox-close" id="lightbox-close" aria-label="关闭">✕</button>
+        <button class="lightbox-prev" id="lightbox-prev" aria-label="上一张">‹</button>
+        <button class="lightbox-next" id="lightbox-next" aria-label="下一张">›</button>
         <img class="lightbox-img" id="lightbox-img" src="" alt="">
+        <div class="lightbox-counter" id="lightbox-counter"></div>
     </div>
 
     <script src="js/main.js"></script>

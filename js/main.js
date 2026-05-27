@@ -1,10 +1,10 @@
 /**
- * 纪念日时间轴 - JavaScript
- * 记录用户和女朋友的点点滴滴
+ * 🚪 任意门 · 纪念日时间轴
+ * 哆啦A梦主题 · 交互增强
  */
 
 // ============================================
-// 时间轴数据 - 在此编辑你的纪念日内容
+// 时间轴数据
 // ============================================
 const timelineData = [
     {
@@ -394,83 +394,341 @@ const timelineData = [
 ];
 
 // ============================================
+// 工具函数
+// ============================================
+
+/** 从日期字符串提取月份数字 */
+function extractMonth(dateStr) {
+    const match = dateStr.match(/(\d+)月/);
+    return match ? parseInt(match[1]) : null;
+}
+
+/** 将中文日期解析为排序用的 Date 对象 */
+function parseDateForSort(dateStr) {
+    // 处理 "2026年5月" 这种没有日的
+    const matchD = dateStr.match(/(\d+)年(\d+)月(\d+)日/);
+    if (matchD) {
+        return new Date(parseInt(matchD[1]), parseInt(matchD[2]) - 1, parseInt(matchD[3]));
+    }
+    const matchM = dateStr.match(/(\d+)年(\d+)月/);
+    if (matchM) {
+        return new Date(parseInt(matchM[1]), parseInt(matchM[2]) - 1, 1);
+    }
+    return new Date(0);
+}
+
+/** 获取月份对应的 emoji */
+function getMonthEmoji(month) {
+    const map = { 3: '🌸', 4: '🌿', 5: '☀️' };
+    return map[month] || '📅';
+}
+
+/** 获取月份中文名 */
+function getMonthName(month) {
+    const map = { 3: '三月·初遇', 4: '四月·热恋', 5: '五月·情深' };
+    return map[month] || `${month}月`;
+}
+
+// ============================================
 // DOM 元素
 // ============================================
-const timelineContainer = document.getElementById('timeline');
+const timeline = document.getElementById('timeline');
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
 const lightboxClose = document.getElementById('lightbox-close');
+const lightboxPrev = document.getElementById('lightbox-prev');
+const lightboxNext = document.getElementById('lightbox-next');
+const lightboxCounter = document.getElementById('lightbox-counter');
+const monthNavBtns = document.querySelectorAll('.month-nav-btn');
+const backToTop = document.getElementById('backToTop');
+
+// 灯箱状态
+let lightboxState = {
+    allImages: [],    // 所有图片路径的扁平数组
+    currentIndex: -1,
+};
 
 // ============================================
-// 渲染时间轴
+// 渲染时间轴（按月分组）
 // ============================================
 function renderTimeline() {
     if (timelineData.length === 0) {
-        timelineContainer.innerHTML = `
+        timeline.innerHTML = `
             <div class="timeline-empty">
-                <div class="timeline-empty-icon">🎀</div>
-                <p class="timeline-empty-text">时间轴内容为空</p>
-                <p class="timeline-empty-text">请在 js/main.js 的 timelineData 中添加内容</p>
+                <span class="timeline-empty-icon">🔔</span>
+                <p class="timeline-empty-text">时间轴还没有内容</p>
+                <p class="timeline-empty-text">在 js/main.js 的 timelineData 中添加回忆吧 ✨</p>
             </div>
         `;
         return;
     }
 
-    timelineContainer.innerHTML = timelineData.map((item, index) => `
-        <div class="timeline-item ${item.special ? 'special' : ''}" data-index="${index}">
-            <div class="timeline-dot"></div>
-            <span class="timeline-date">${item.date}</span>
-            <div class="timeline-card">
-                <h3 class="timeline-title">${item.title}</h3>
-                <p class="timeline-text">${item.content}</p>
-                ${item.images.length > 0 ? `
-                    <div class="timeline-images">
-                        ${item.images.map(img => `
-                            <div class="image-wrapper">
-                                <div class="image-placeholder">
-                                    <div class="placeholder-spinner"></div>
-                                </div>
-                                <img
-                                    data-src="${img}"
-                                    alt="${item.title}"
-                                    class="timeline-image lazy"
-                                    onclick="openLightbox('${img}')"
-                                >
-                            </div>
-                        `).join('')}
-                    </div>
-                ` : ''}
-            </div>
-        </div>
-    `).join('');
+    // 按月份分组（保持原有顺序）
+    const groups = {};
+    timelineData.forEach(item => {
+        const month = extractMonth(item.date);
+        if (!groups[month]) groups[month] = [];
+        groups[month].push(item);
+    });
 
+    // 构建 HTML
+    let html = '';
+    const sortedMonths = Object.keys(groups)
+        .map(Number)
+        .sort((a, b) => a - b);
+
+    sortedMonths.forEach((month, groupIdx) => {
+        const items = groups[month];
+        const emoji = getMonthEmoji(month);
+        const name = getMonthName(month);
+
+        // 月份分组标题
+        html += `
+            <div class="month-group-title" data-month="${month}">
+                <span class="month-group-label">
+                    <span class="month-emoji">${emoji}</span>
+                    ${name}
+                </span>
+            </div>
+        `;
+
+        // 该月的条目
+        items.forEach((item, idx) => {
+            const globalIndex = timelineData.indexOf(item);
+            html += `
+                <div class="timeline-item ${item.special ? 'special' : ''}"
+                     data-index="${globalIndex}" data-month="${month}">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">${item.date}</span>
+                    <div class="timeline-card">
+                        <h3 class="timeline-title">${item.title}</h3>
+                        <p class="timeline-text">${item.content}</p>
+                        ${item.images.length > 0 ? `
+                            <div class="timeline-images">
+                                ${item.images.map(img => `
+                                    <div class="image-wrapper">
+                                        <div class="image-placeholder">
+                                            <div class="placeholder-spinner"></div>
+                                        </div>
+                                        <img
+                                            data-src="${img}"
+                                            alt="${item.title}"
+                                            class="timeline-image lazy"
+                                        >
+                                    </div>
+                                `).join('')}
+                            </div>
+                        ` : ''}
+                    </div>
+                </div>
+            `;
+        });
+    });
+
+    timeline.innerHTML = html;
+
+    // 收集所有图片用于灯箱导航
+    collectAllImages();
+
+    // 绑定图片点击事件
+    bindImageClicks();
+
+    // 初始化滚动动画
     initScrollAnimation();
+
+    // 初始化懒加载
     initLazyLoad();
 }
 
 // ============================================
-// 滚动动画
+// 收集所有图片（用于灯箱导航）
+// ============================================
+function collectAllImages() {
+    const allImages = [];
+    timelineData.forEach(item => {
+        item.images.forEach(img => {
+            allImages.push({ src: img, title: item.title });
+        });
+    });
+    lightboxState.allImages = allImages;
+}
+
+// ============================================
+// 图片点击 → 灯箱（带前后导航）
+// ============================================
+function bindImageClicks() {
+    document.querySelectorAll('.timeline-image.loaded, .timeline-image:not(.lazy)').forEach(img => {
+        img.addEventListener('click', () => {
+            const src = img.dataset.src || img.src;
+            openLightbox(src);
+        });
+    });
+
+    // 对懒加载图片，等加载完成后绑定
+    const observer = new MutationObserver(() => {
+        document.querySelectorAll('.timeline-image.loaded:not([data-click-bound])').forEach(img => {
+            img.setAttribute('data-click-bound', 'true');
+            img.addEventListener('click', () => {
+                const src = img.dataset.src || img.src;
+                openLightbox(src);
+            });
+        });
+    });
+    observer.observe(timeline, { childList: true, subtree: true });
+}
+
+// ============================================
+// 灯箱功能（增强：前后导航）
+// ============================================
+function openLightbox(src) {
+    if (!src) return;
+
+    // 找到该图片在 allImages 中的索引
+    const idx = lightboxState.allImages.findIndex(img => img.src === src);
+    lightboxState.currentIndex = idx;
+
+    lightboxImg.src = src;
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+
+    updateLightboxCounter();
+
+    // 预加载前后图片
+    preloadAdjacent(idx);
+}
+
+function closeLightbox() {
+    lightbox.classList.remove('active');
+    lightboxImg.src = '';
+    lightboxState.currentIndex = -1;
+    document.body.style.overflow = '';
+}
+
+function navigateLightbox(direction) {
+    const total = lightboxState.allImages.length;
+    if (total === 0) return;
+
+    let newIndex = lightboxState.currentIndex + direction;
+    // 循环
+    if (newIndex < 0) newIndex = total - 1;
+    if (newIndex >= total) newIndex = 0;
+
+    lightboxState.currentIndex = newIndex;
+    const img = lightboxState.allImages[newIndex];
+    lightboxImg.src = img.src;
+    updateLightboxCounter();
+    preloadAdjacent(newIndex);
+}
+
+function updateLightboxCounter() {
+    const total = lightboxState.allImages.length;
+    const current = lightboxState.currentIndex + 1;
+    if (total > 0) {
+        lightboxCounter.textContent = `${current} / ${total}`;
+    } else {
+        lightboxCounter.textContent = '';
+    }
+}
+
+function preloadAdjacent(idx) {
+    const total = lightboxState.allImages.length;
+    const prevIdx = (idx - 1 + total) % total;
+    const nextIdx = (idx + 1) % total;
+    const link1 = document.createElement('link');
+    link1.rel = 'preload';
+    link1.as = 'image';
+    link1.href = lightboxState.allImages[prevIdx].src;
+    document.head.appendChild(link1);
+    const link2 = document.createElement('link');
+    link2.rel = 'preload';
+    link2.as = 'image';
+    link2.href = lightboxState.allImages[nextIdx].src;
+    document.head.appendChild(link2);
+}
+
+// 灯箱事件
+lightboxClose.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+});
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') navigateLightbox(-1);
+    if (e.key === 'ArrowRight') navigateLightbox(1);
+});
+lightboxPrev.addEventListener('click', () => navigateLightbox(-1));
+lightboxNext.addEventListener('click', () => navigateLightbox(1));
+
+// ============================================
+// 月份导航筛选
+// ============================================
+monthNavBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // 更新按钮状态
+        monthNavBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const targetMonth = btn.dataset.month;
+
+        // 显示/隐藏条目和分组标题
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            if (targetMonth === 'all') {
+                item.classList.remove('filtered-out');
+            } else {
+                const itemMonth = item.dataset.month;
+                if (itemMonth === targetMonth) {
+                    item.classList.remove('filtered-out');
+                } else {
+                    item.classList.add('filtered-out');
+                }
+            }
+        });
+
+        // 分组标题
+        document.querySelectorAll('.month-group-title').forEach(title => {
+            if (targetMonth === 'all') {
+                title.style.display = '';
+            } else {
+                const titleMonth = title.dataset.month;
+                title.style.display = titleMonth === targetMonth ? '' : 'none';
+            }
+        });
+    });
+});
+
+// ============================================
+// 滚动动画（错开延迟）
 // ============================================
 function initScrollAnimation() {
-    const items = document.querySelectorAll('.timeline-item');
+    const items = document.querySelectorAll('.timeline-item:not(.filtered-out)');
 
     const observer = new IntersectionObserver(
         (entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+                    const item = entry.target;
+                    // 错开延迟
+                    const siblings = Array.from(item.parentNode.querySelectorAll('.timeline-item:not(.filtered-out)'));
+                    const idx = siblings.indexOf(item);
+                    const delay = Math.min(idx * 50, 300);
+                    setTimeout(() => {
+                        item.classList.add('visible');
+                    }, delay);
                 }
             });
         },
         {
             threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+            rootMargin: '0px 0px -60px 0px'
         }
     );
 
     items.forEach((item) => observer.observe(item));
 }
 
+// ============================================
+// 图片懒加载
+// ============================================
 function initLazyLoad() {
     const lazyImages = document.querySelectorAll('img.lazy');
 
@@ -491,6 +749,11 @@ function initLazyLoad() {
                             if (placeholder) {
                                 placeholder.classList.add('hidden');
                             }
+                            // 绑定点击
+                            if (!img.hasAttribute('data-click-bound')) {
+                                img.setAttribute('data-click-bound', 'true');
+                                img.addEventListener('click', () => openLightbox(src));
+                            }
                         };
                         img.onerror = () => {
                             if (placeholder) {
@@ -503,7 +766,7 @@ function initLazyLoad() {
             });
         },
         {
-            rootMargin: '100px 0px',
+            rootMargin: '150px 0px',
             threshold: 0.01
         }
     );
@@ -512,38 +775,11 @@ function initLazyLoad() {
 }
 
 // ============================================
-// 灯箱功能
-// ============================================
-function openLightbox(src) {
-    if (!src) return;
-    lightboxImg.src = src;
-    lightbox.classList.add('active');
-    document.body.style.overflow = 'hidden';
-}
-
-function closeLightbox() {
-    lightbox.classList.remove('active');
-    lightboxImg.src = '';
-    document.body.style.overflow = '';
-}
-
-// 事件监听
-lightboxClose.addEventListener('click', closeLightbox);
-lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) closeLightbox();
-});
-
-// ESC 键关闭灯箱
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeLightbox();
-});
-
-// ============================================
 // 天数计算
 // ============================================
 function updateDaysCounter() {
-    const meetDate = new Date('2026-03-24');  // 相遇日期
-    const loveDate = new Date('2026-04-11');   // 在一起日期
+    const meetDate = new Date('2026-03-24');
+    const loveDate = new Date('2026-04-11');
     const today = new Date();
 
     const meetDays = Math.floor((today - meetDate) / (1000 * 60 * 60 * 24)) + 1;
@@ -556,9 +792,44 @@ function updateDaysCounter() {
 }
 
 // ============================================
+// 回到顶部按钮
+// ============================================
+function initBackToTop() {
+    const handleScroll = () => {
+        if (window.scrollY > 400) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
+
+// ============================================
+// 月份导航滚动阴影效果
+// ============================================
+function initMonthNavShadow() {
+    const monthNav = document.getElementById('monthNav');
+    const handleScroll = () => {
+        if (window.scrollY > 60) {
+            monthNav.classList.add('scrolled');
+        } else {
+            monthNav.classList.remove('scrolled');
+        }
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+}
+
+// ============================================
 // 初始化
 // ============================================
 document.addEventListener('DOMContentLoaded', () => {
     updateDaysCounter();
     renderTimeline();
+    initBackToTop();
+    initMonthNavShadow();
 });
