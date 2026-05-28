@@ -156,7 +156,7 @@ const timelineData = [
         date: '2026年4月26日',
         title: '甜到心里的糖水',
         content: '后来坐着CC的摩托车去吃了糖水。糖水很甜，但和你在一起的时候，每一刻都是幸福和甜甜的～ 🍡',
-        images: ['images/4_26_sweet_1.webp'],
+        images: ['images/4_26_sweet_1.webp', 'images/4_26_sweet_2.JPG'],
         special: false
     },
     {
