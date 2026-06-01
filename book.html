@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📖 我们的纪念册</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Serif+SC:wght@400;600;700&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/book.css">
+</head>
+<body>
+
+    <!-- ===== 背景装饰 ===== -->
+    <div class="book-bg" aria-hidden="true">
+        <div class="bg-orb bg-orb-1"></div>
+        <div class="bg-orb bg-orb-2"></div>
+        <div class="bg-particles" id="bgParticles"></div>
+    </div>
+
+    <!-- ===== 书架 ===== -->
+    <div class="bookshelf" aria-hidden="true">
+        <div class="shelf-line"></div>
+        <div class="shelf-ornament shelf-left">❦</div>
+        <div class="shelf-ornament shelf-right">❦</div>
+    </div>
+
+    <!-- ===== 主容器 ===== -->
+    <div class="book-wrapper">
+        <div class="book-container" id="bookContainer">
+
+            <!-- 书脊装饰线 -->
+            <div class="book-spine" aria-hidden="true">
+                <div class="spine-line"></div>
+                <div class="spine-dots">
+                    <span class="spine-dot"></span>
+                    <span class="spine-dot"></span>
+                    <span class="spine-dot"></span>
+                    <span class="spine-dot"></span>
+                    <span class="spine-dot"></span>
+                </div>
+            </div>
+
+            <!-- 页面容器 -->
+            <div class="book-pages" id="bookPages">
+                <!-- 由 JS 动态渲染 -->
+            </div>
+
+            <!-- 翻页阴影 -->
+            <div class="flip-shadow" id="flipShadow"></div>
+
+            <!-- 翻页角落提示 -->
+            <div class="page-corner page-corner-right" id="cornerRight">
+                <span class="corner-icon">⟩</span>
+            </div>
+            <div class="page-corner page-corner-left" id="cornerLeft">
+                <span class="corner-icon">⟨</span>
+            </div>
+
+        </div>
+
+        <!-- ===== 底部控件 ===== -->
+        <div class="book-controls">
+            <button class="ctrl-btn" id="prevBtn" aria-label="上一页">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+
+            <div class="page-indicator" id="pageIndicator">
+                <span class="page-current" id="pageCurrent">1</span>
+                <span class="page-sep">/</span>
+                <span class="page-total" id="pageTotal">1</span>
+            </div>
+
+            <button class="ctrl-btn" id="nextBtn" aria-label="下一页">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+
+            <!-- 目录按钮 -->
+            <button class="ctrl-btn ctrl-toc" id="tocBtn" aria-label="目录" title="目录">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </button>
+        </div>
+
+        <!-- 进度条 -->
+        <div class="reading-progress" id="readingProgress">
+            <div class="progress-track">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== 目录面板（侧滑） ===== -->
+    <div class="toc-overlay" id="tocOverlay">
+        <div class="toc-panel" id="tocPanel">
+            <div class="toc-header">
+                <h2 class="toc-title">📖 目 录</h2>
+                <button class="toc-close" id="tocClose" aria-label="关闭目录">✕</button>
+            </div>
+            <div class="toc-list" id="tocList">
+                <!-- 由 JS 渲染 -->
+            </div>
+            <div class="toc-footer">
+                <span class="toc-total">共 <strong id="tocTotalPages">0</strong> 页 · <strong id="tocTotalEntries">0</strong> 篇回忆</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== 灯箱 ===== -->
+    <div class="lb-overlay" id="lbOverlay">
+        <button class="lb-close" id="lbClose">✕</button>
+        <button class="lb-nav lb-prev" id="lbPrev">‹</button>
+        <button class="lb-nav lb-next" id="lbNext">›</button>
+        <img class="lb-img" id="lbImg" src="" alt="">
+        <div class="lb-counter" id="lbCounter"></div>
+    </div>
+
+    <script src="js/book.js"></script>
+</body>
+</html>
