@@ -468,7 +468,7 @@ const timelineData = [
         date: '2026年6月13日',
         title: 'CC家的盛宴',
         content: '这一天中午，去了CC家吃午饭。她爸做了花生咸骨粥，还大摆宴席——牛肉炒粉、蒸鱼、菜花、水煮虾，非常丰富！看得出本来是只安排了粥和炒粉的（广东人标配），其他菜是专门为我准备的，所以我尽可能多吃点，确实也好吃 😋',
-        images: ['images/6_13_14/IMG_4221.webp', 'images/6_13_14/IMG_4224.webp'],
+        images: ['images/6_13_14/IMG_4221.webp'],
         special: false
     },
     {
@@ -476,7 +476,7 @@ const timelineData = [
         date: '2026年6月13日',
         title: '等CC补习的时光',
         content: 'CC下午要去做家教补习，我就在一家小店里坐了下来，变成了一个精致的类CBD男生——拿着苹果笔记本，喝着饮料，安安静静地等着CC补习完。这种等待的感觉，竟然也很幸福 ☕',
-        images: [],
+        images: ['images/6_13_14/IMG_2037.webp'],
         special: false
     },
     {
@@ -484,7 +484,7 @@ const timelineData = [
         date: '2026年6月13日',
         title: '顺德桑拿鸡',
         content: '晚上，我们直接飞去了顺德，吃了桑拿鸡！这家是上次去陈村时就计划要吃的，终于如愿了。整体看上去都不错，味道也很好，我们还一起看了粤BA的比赛 🍗',
-        images: ['images/6_13_14/IMG_4225.webp', 'images/6_13_14/IMG_4227.webp'],
+        images: ['images/6_13_14/IMG_4224.webp', 'images/6_13_14/IMG_4225.webp'],
         special: false
     },
     {
@@ -492,7 +492,7 @@ const timelineData = [
         date: '2026年6月13日',
         title: '9块钱的停车场',
         content: '回到停车场，看到一个类似广州塔的小建筑在停车场里亮着灯，我们乐在其中，拍了照、欣赏了好久。殊不知，后面竟然要为这好看的小建筑付出了9块钱的停车费！可能是因为以前听过同一家公司的停车场，导致本来可以免去一大半停车费，最后还是全款给了9块钱，太心疼了 😂',
-        images: ['images/6_13_14/IMG_4229.webp'],
+        images: ['images/6_13_14/IMG_4227.webp'],
         special: false
     },
     {
@@ -500,7 +500,7 @@ const timelineData = [
         date: '2026年6月13日',
         title: '得到CC认可的双皮奶',
         content: '之后还去了一家提前 plan 好的甜品店，专门去吃他家的双皮奶。能得到CC认可的双皮奶，可真没有多少家！这家，是其中之一 🍮',
-        images: ['images/6_13_14/IMG_4230.webp', 'images/6_13_14/IMG_4231.webp', 'images/6_13_14/IMG_2040.webp', 'images/6_13_14/IMG_2041.webp'],
+        images: ['images/6_13_14/IMG_4229.webp', 'images/6_13_14/IMG_4230.webp', 'images/6_13_14/IMG_4231.webp'],
         special: false
     },
     {
