@@ -500,7 +500,7 @@ const timelineData = [
         date: '2026年6月13日',
         title: '得到CC认可的双皮奶',
         content: '之后还去了一家提前 plan 好的甜品店，专门去吃他家的双皮奶。能得到CC认可的双皮奶，可真没有多少家！这家，是其中之一 🍮',
-        images: ['images/6_13_14/IMG_4230.webp'],
+        images: ['images/6_13_14/IMG_4230.webp', 'images/6_13_14/IMG_4231.webp', 'images/6_13_14/IMG_2040.webp', 'images/6_13_14/IMG_2041.webp'],
         special: false
     },
     {
@@ -516,7 +516,7 @@ const timelineData = [
         date: '2026年6月14日',
         title: '寻找咖啡色JokeBear & 壹加壹',
         content: '下午想着去找咖啡色的JokeBear，转了一圈还是没找到。然后和CC一起逛了本土特色大型超市《壹加壹》，点着奶茶逛着超市，非常的 chill，也是我们向往的生活 🧸',
-        images: ['images/6_13_14/IMG_4231.webp'],
+        images: [],
         special: false
     },
     {
@@ -524,7 +524,7 @@ const timelineData = [
         date: '2026年6月14日',
         title: '我们的第一部电影',
         content: '下午4点多和CC一起看了《火遮眼》——一部全程打戏的电影，好爽！全场没有过多独白，拳拳到肉。这是我和CC在一起以来看的第一部电影，在一起这么久了，才终于完成了传统三件套：「逛街、吃饭、看电影」🎬',
-        images: ['images/6_13_14/IMG_2040.webp'],
+        images: [],
         special: false
     },
     {
@@ -532,7 +532,7 @@ const timelineData = [
         date: '2026年6月14日',
         title: '夜游菊花园',
         content: '晚上回到CC家楼下，我们又去走了一圈菊花园，还看到了丰田卡罗拉车友们在聚集，有点搞笑的场面。回家的路上，感受着夜晚的微风，和CC在一起就是这样，什么都是快乐的 🌙',
-        images: ['images/6_13_14/IMG_2041.webp'],
+        images: [],
         special: false
     },
     {
