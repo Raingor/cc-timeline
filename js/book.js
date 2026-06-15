@@ -331,7 +331,7 @@
             id: 53, date: '2026年6月13日',
             title: '顺德桑拿鸡',
             content: '晚上，我们直接飞去了顺德，吃了桑拿鸡！这家是上次去陈村时就计划要吃的，终于如愿了。整体看上去都不错，味道也很好，我们还一起看了粤BA的比赛。',
-            images: ['images/6_13_14/IMG_4224.webp', 'images/6_13_14/IMG_4225.webp'], special: false
+            images: ['images/6_13_14/IMG_4224.webp', 'images/6_13_14/IMG_4225.webp', 'images/6_13_14/IMG_2040.webp'], special: false
         },
         {
             id: 54, date: '2026年6月13日',
