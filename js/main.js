@@ -606,6 +606,54 @@ const timelineData = [
         content: '饭后我们一起拍了照片，记录下这个温馨的时刻。从第一次见家长到全家齐聚，能感觉到自己正在慢慢融入这个家庭。和CC一起，每一步都走得踏实又温暖 📸',
         images: [],
         special: false
+    },
+    {
+        id: 76,
+        date: '2026年7月5日',
+        title: '台湾卤面与沙溪古镇',
+        content: '中午去了一家台湾老板开的店，吃了碗卤面，好吃！\n\n下午和CC去了中山沙溪镇，原计划是去石岐的，但记错时间了——其实是下周日才去。不过沙溪镇意外地好逛！古老的建筑和小巷子充满了历史感。\n\n我们从小红书看到的文记炒云吞没找到，但找到了老友记炒云吞！味道真不错，尤其是他们的酱料，非常独特 🍜',
+        images: ['custom-images/IMG_4610.webp', 'custom-images/IMG_2231.webp', 'custom-images/IMG_4615.webp', 'custom-images/IMG_4614.webp', 'custom-images/IMG_4618.webp'],
+        special: false
+    },
+    {
+        id: 77,
+        date: '2026年7月5日',
+        title: '酒店里的微醺球赛夜',
+        content: '在附近散步时买了肉夹馍和凉皮带回酒店，我还提议买敬酒、维C水和雪碧，在酒店里调酒喝。\n\n我们就一边吃一边喝，看着粤BA比赛，这种惬意的二人世界，真的很舒服 🏀🍸',
+        images: ['custom-images/IMG_4612.webp', 'custom-images/IMG_4611.webp'],
+        special: false
+    },
+    {
+        id: 78,
+        date: '2026年7月6日',
+        title: '武藏食堂的炸猪扒',
+        content: '本计划去亚金金，看到前面排了30桌就放弃了，改去附近的武藏食堂吃炸猪扒。虽然也要排队，但吃起来是真的好吃！\n\n最惊喜的是头顶上的电视正播放着哆啦A梦，我们边吃边看，发现动画里的大雄他们也在家里吃炸猪扒饭——太有共鸣了！🍛🎬',
+        images: ['custom-images/IMG_4624.webp', 'custom-images/IMG_4621.webp', 'custom-images/IMG_4620.webp'],
+        special: false
+    },
+    {
+        id: 79,
+        date: '2026年7月6日',
+        title: '石岐·纪念馆与菠萝啤',
+        content: '带着这位中山女朋友去逛中山纪念馆，刚开不久，逛了一大圈，还是很有威严感的。\n\n今天来石岐的最大目的其实是买菠萝啤——我姐心念念上次试喝过的菠萝啤，所以我就拉着CC去买了。\n\n这天气真的是阴晴不定，一会儿暴雨一会儿大太阳，印证了无论日晒还是雨淋，我都在你身边！绕了个大圈走到一家咖啡店休息，一起拍了照片～ 🍻📸',
+        images: ['custom-images/IMG_4628.webp', 'custom-images/IMG_2232.webp', 'custom-images/IMG_2233.webp', 'custom-images/IMG_4639.webp', 'custom-images/IMG_4635.webp'],
+        special: false
+    },
+    {
+        id: 80,
+        date: '2026年7月6日',
+        title: '樱花里的晚餐与夜渡',
+        content: '晚上去樱花里吃了干蒸排骨之类的，鲳鱼非常美味！\n\n吃完后我们完成了上次未完成的计划——骑着电动车渡江去对面看看。相比于CC的着装，我看着更local一些～可惜对面没有想象中热闹，没逛多久就坐渡轮回去了。\n\n回去的路上，带CC去喝了碗糖水，给这个周末画上甜甜的句号 🍬🛵',
+        images: ['custom-images/IMG_4649.webp', 'custom-images/IMG_4650.webp', 'custom-images/IMG_4651.webp', 'custom-images/IMG_4655.webp'],
+        special: false
+    },
+    {
+        id: 81,
+        date: '2026年7月6日',
+        title: 'CC的信',
+        content: '结束这一周的旅途，CC又给我写了信～\n\n看完心里真的很开心。能让CC开心起来的话，做什么都是值得的。我还是依旧的行动派，过多的情话我不怎么会讲，只想用我的行为、行动来表达——我是真的很喜欢CC，会一直陪着她，保护她，照顾她，给她最好的生活和幸福。\n\n这份幸福可能不是大富大贵，但我会尽我所能给她最好的生活、最好的幸福，让CC能和我开开心心地游历更多地方，吃更多好吃的，一起走更多的一万步，一直走下去 💕',
+        images: ['custom-images/IMG_2235.webp', 'custom-images/IMG_2239.webp'],
+        special: false
     }
 ];
 
@@ -635,13 +683,13 @@ function parseDateForSort(dateStr) {
 
 /** 获取月份对应的 emoji */
 function getMonthEmoji(month) {
-    const map = { 3: '🌸', 4: '🌿', 5: '☀️', 6: '💕' };
+    const map = { 3: '🌸', 4: '🌿', 5: '☀️', 6: '💕', 7: '🌙' };
     return map[month] || '📅';
 }
 
 /** 获取月份中文名 */
 function getMonthName(month) {
-    const map = { 3: '三月·初遇', 4: '四月·热恋', 5: '五月·情深', 6: '六月·升温' };
+    const map = { 3: '三月·初遇', 4: '四月·热恋', 5: '五月·情深', 6: '六月·升温', 7: '七月·盛夏' };
     return map[month] || `${month}月`;
 }
 
