@@ -2,3 +2,5 @@
 *.log
 .pi/
 .joycode/
+custom-images/
+docs/
