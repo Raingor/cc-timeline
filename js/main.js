@@ -654,6 +654,66 @@ const timelineData = [
         content: '结束这一周的旅途，CC又给我写了信～\n\n看完心里真的很开心。能让CC开心起来的话，做什么都是值得的。我还是依旧的行动派，过多的情话我不怎么会讲，只想用我的行为、行动来表达——我是真的很喜欢CC，会一直陪着她，保护她，照顾她，给她最好的生活和幸福。\n\n这份幸福可能不是大富大贵，但我会尽我所能给她最好的生活、最好的幸福，让CC能和我开开心心地游历更多地方，吃更多好吃的，一起走更多的一万步，一直走下去 💕',
         images: ['custom-images/IMG_2235.webp', 'custom-images/IMG_2239.webp'],
         special: false
+    },
+    {
+        id: 82,
+        date: '2026年7月11日',
+        title: '周六早茶',
+        content: '终于有一个完整的周六属于我们。一早就去喝早茶，虾饺、凤爪、陈村粉、青菜摆满一桌——是广东人独有的仪式感。开启和CC黏在一起的一天，从胃到心都暖暖的 🍵',
+        images: ['images/7_11/tea.webp'],
+        special: false
+    },
+    {
+        id: 83,
+        date: '2026年7月11日',
+        title: '功夫足球、电影与逛街',
+        content: '从早茶开始，一整天都黏在一起。一起去看了《功夫足球》，又看了一场电影，逛商场的时候还遇到了可爱的蓝精灵。阳光很好，身边的人更好，简单的小事都闪闪发光 🎬🛍️',
+        images: ['images/7_11/smurf_1.webp', 'images/7_11/smurf_2.webp'],
+        special: false
+    },
+    {
+        id: 84,
+        date: '2026年7月11日',
+        title: '南园咖喱下午茶',
+        content: '逛街途中走进南园咖喱，点了一份下午茶。咖喱香混合着斑斓咖央多士的甜，是热天里的小确幸。和CC坐在一起，吃什么都很开心 🍛',
+        images: ['images/7_11/curry.webp', 'images/7_11/toast.webp'],
+        special: false
+    },
+    {
+        id: 85,
+        date: '2026年7月11日',
+        title: '可爱的大头照',
+        content: '和CC一起拍了可爱的大头照！Chiikawa的相框，各种搞怪的表情，每一张都好好看。可爱的CC，还有可爱的我——这一组照片，会成为这个周末最可爱的纪念 📸',
+        images: [
+            'images/7_11/booth_strip_1.webp',
+            'images/7_11/booth_strip_2.webp',
+            'images/7_11/booth_1.webp',
+            'images/7_11/booth_2.webp',
+            'images/7_11/booth_3.webp',
+            'images/7_11/booth_4.webp',
+            'images/7_11/booth_5.webp',
+            'images/7_11/booth_6.webp',
+            'images/7_11/booth_7.webp',
+            'images/7_11/booth_8.webp',
+            'images/7_11/booth_9.webp'
+        ],
+        special: false
+    },
+    {
+        id: 86,
+        date: '2026年7月11日',
+        title: '晚上的濑粉与奶茶蛋糕',
+        content: '晚上去吃了濑粉，热腾腾的汤粉下肚，一整天的疲惫都散了。后来又去喝了一个奶茶蛋糕二合一的可爱饮品——甜甜的，像这个周末一样 🍜🥤',
+        images: ['images/7_11/noodle.webp', 'images/7_11/cake_tea.webp'],
+        special: false
+    },
+    {
+        id: 87,
+        date: '2026年7月12日',
+        title: '石岐的抹茶绵绵冰',
+        content: '周日和CC去了石岐，顶着大太阳走到一家饮品店。CC选了抹茶绵绵冰，我就喝苦瓜柠檬茶。店里一开始没什么人，后来慢慢坐满，果然是CC甄选店。吃完抹茶的清凉，刚好抵消了暑气 🍧☀️',
+        images: ['images/7_12/matcha.webp'],
+        special: false
     }
 ];
 
