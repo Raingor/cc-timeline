@@ -722,6 +722,62 @@ const timelineData = [
         content: '周日和CC去了石岐，顶着大太阳走到一家饮品店。CC选了抹茶绵绵冰，我就喝苦瓜柠檬茶。店里一开始没什么人，后来慢慢坐满，果然是CC甄选店。吃完抹茶的清凉，刚好抵消了暑气 🍧☀️',
         images: ['images/7_12/matcha.webp'],
         special: false
+    },
+    {
+        id: 89,
+        date: '2026年7月18日',
+        title: '周五的惊喜',
+        content: '以为普通的周五，平平无奇的。我们两边都看着广州和中山的粤BA比赛，因为是星期五，我也是照常的加班，一路回家一路在看粤BA的比赛，一边看一边和CC分享比赛，还聊着火热来着。\n\n我回到家附近后，想着去吃个汤粉，吃完汤粉感觉周五终于要结束了，可是比赛还继续看着——随后CC一个图片发来！竟然是来到了我家附近了，一下就震惊到我了。\n\n突然的来到让我在疲惫的周五突然燃起了精神了。知道她突然而来的消息有种好开心，原来一直给别人制造惊喜的时候，被别人制造惊喜是一种很奇妙很奇特的感觉，也许这是一种爱着就会恨不得见面的那种感觉吧 ',
+        images: ['images/7_18_fishball.jpeg', 'images/IMG_4883.jpeg'],
+        special: false
+    },
+    {
+        id: 90,
+        date: '2026年7月19日',
+        title: 'CC第一次在广州过周末',
+        content: '这次CC来，是CC第一次真正正在广州度过周末。我带她吃了我爱吃的，走过她想看的，吃了她想吃的——太多流水账说不尽，写不完。\n\n一起吃我小时候吃到大的鱼蛋粉、还有雪糕华夫饼、还有顺记冰室的甜品；我们还一起去逛了广东民族博物馆、还逛了至今为止都印象深刻的美术馆，具有20个展厅的一个美术馆，走得我们俩最后都有气无力的感觉了。\n\n随后还带CC去北京路，去了一趟心念念的MINISO Land里，挑选CC喜欢的joke bear的周边。虽然一整天下来都是累累的，可是还是很开心，最爱的人在身边，一起累着。一起走着，一起开心，互相扶持着。\n\n也许这就是未来我们的很小的一个片段，也是我们未来一起到老的一小段缩影。我看着她吃喝玩乐，看着她拆盲盒的快乐，我也是很开心的了。也许爱一个人，并没有那么的复杂，就是简简单单的两个人在一起做两个人的事就很满足了 ',
+        images: ['images/7_18_icecream_shop.jpeg', 'images/7_18_waffle.jpeg', 'images/7_18_icecream_sign.jpeg', 'images/7_18_mango_ice.jpeg', 'images/7_18_redbean.jpeg', 'images/7_18_museum.jpeg', 'images/7_18_gallery1.jpeg', 'images/7_18_gallery2.jpeg', 'images/7_18_gallery3.jpeg', 'images/7_18_miniso1.jpeg', 'images/7_18_miniso2.jpeg', 'images/7_18_miniso3.jpeg', 'images/7_18_miniso4.jpeg', 'images/IMG_4921.jpeg', 'images/IMG_4922.jpeg', 'images/IMG_4924.jpeg', 'images/IMG_4925.jpeg', 'images/IMG_4918.jpeg', 'images/IMG_4905.jpeg', 'images/IMG_4913.jpeg', 'images/IMG_4915.jpeg', 'images/IMG_4928.jpeg', 'images/IMG_4930.jpeg', 'images/IMG_4931.jpeg', 'images/IMG_4933.jpeg', 'images/IMG_2378.jpeg', 'images/IMG_2380.jpeg', 'images/IMG_2381.jpeg', 'images/IMG_2384.jpeg', 'images/IMG_2389.jpeg'],
+        special: false
+    },
+    {
+        id: 91,
+        date: '2026年7月20日',
+        title: '永庆坊与M Stand的乌龙幸运',
+        content: '在最松弛的一天，我很有目的性的带着CC去吃了个咸蛋黄鸡翅，还带CC进去永庆坊。可是太多人了里面，根本没办法呼吸了已经是，可能是适逢暑假，小朋友和家长、旅行团加在一起就很多人了。\n\n后面我们也是受不了，去了M Stand里面喝咖啡。喝咖啡这个也算是一种乌龙的幸运——原本买两杯咖啡送一个小杯子，可能是店里的店员们没沟通好，也太忙了，导致我们拿了个大的水杯之余，还送了个小杯子给我们，黑色材质的，还挺好看的！两杯咖啡得了两个杯子，赚麻的感觉 ',
+        images: ['images/7_19_salt_egg_wings.jpeg', 'images/7_19_yongqingfang.jpeg', 'images/7_19_toyshop.jpeg', 'images/7_19_mstand.jpeg', 'images/7_20_mstand2.jpeg', 'images/IMG_4935.jpeg', 'images/IMG_4939.jpeg', 'images/IMG_4943.jpeg', 'images/IMG_4945.jpeg', 'images/IMG_2395.jpeg', 'images/IMG_4898.jpeg'],
+        special: false
+    },
+    {
+        id: 92,
+        date: '2026年7月20日',
+        title: '回到小榄的松弛感',
+        content: '在下午的时候我们也逛不动了，收拾了下东西，就开始送CC回中山小榄了。回到小榄，真的很有一种松弛的感觉。广州太多人了，小榄太少了人，有一个鲜明的对比，导致感觉回到小榄后，一切都好平和，节奏都缓慢下来了。\n\n我们一起去吃了个烧烤，吃完烧烤后，CC带我去了一家好精致的玩具店，里面真的是太棒了！我们去的时候没什么人的，我和CC一边逛着一边玩着，好多好有趣的玩具，感觉在店里面真的好开心啊！好多奥特曼公仔、盲盒、玩具、汽车模型、遥控车；我们就这样边看边聊边玩的情况下走完了一圈。\n\n最后是选择了一个一开始看中的遥控小车——这个遥控小车是有来源的，之前我们在商场里看到一个小朋友开这个会漂移的遥控车，所以我们看到遥控车第一时间就想到了，所以最后我们还是选择了遥控车来玩 ',
+        images: ['images/7_19_bbq.jpeg', 'images/7_20_rc_car.jpeg', 'images/7_20_rc_parts.jpeg', 'images/7_20_rc_assemble.jpeg', 'images/IMG_4947.jpeg', 'images/IMG_4936.jpeg', 'images/IMG_2396.jpeg', 'images/IMG_4958.jpeg', 'images/IMG_4961.jpeg'],
+        special: false
+    },
+    {
+        id: 93,
+        date: '2026年7月20日',
+        title: 'KIMOJI店与丫丫重逢',
+        content: '我们带着遥控车来到了KIMOJI店，之前有只小狗的店里，把车的电池接上试玩。\n\n一去到店里，我们也是时隔一个月，丫丫（小狗）整个样子都变了，长大了好多，脸也长了，也长高了，像个标准的小型狗了，多了几份尴尬的感觉，可是还是很可爱的！\n\n我们就在店门口那里把遥控车拼装好，试玩了一下，真的好快乐，好过瘾！竟然还有防滑胎和漂移轮胎的搭配来作出飘逸的效果 ',
+        images: ['images/7_20_shadow.jpeg', 'images/7_20_cc_river.jpeg', 'images/7_20_cc_river2.jpeg', 'images/7_20_selfie.jpeg', 'images/7_20_couple.jpeg', 'images/7_20_mirror.jpeg', 'images/IMG_2392.jpeg'],
+        special: false
+    },
+    {
+        id: 94,
+        date: '2026年7月20日',
+        title: '香蕉蛋花糖水的周末收尾',
+        content: '两天多一点的时间，从惊喜，到疲惫、到开心，都是我们俩一起度过的时光。\n\n当CC带我玩具店的时候，我已经是感觉到很开心了。我觉得有一个爱你的人，能把你喜欢的东西一直记在心里，还会尊重你，陪你一起玩——看起来一个三十多岁的男人还喜欢玩玩具，听着好像好幼稚。我知道CC其实不是很知道玩具的意义在哪，可是玩具的意义无分年龄大小，只是玩具它本身只是在于有多少个人分享玩具的乐趣。一个人玩的玩具，那也只能算是临时的玩伴，可是有喜欢的人陪着一起玩玩具这是一件很开心、很满足的事情。\n\n最后我们还去打了个卡，就是上星期一直念的香蕉蛋花糖水，吃着还是很甜的，今天就来反映了，很通便的了。随着吃完糖水，也是结束了这充实的周末，也是爱CC的一个周末 ',
+        images: ['images/7_20_banana_soup.jpeg', 'images/7_20_soup.jpeg', 'images/IMG_2398.jpeg', 'images/IMG_2399.jpeg'],
+        special: false
+    },
+    {
+        id: 95,
+        date: '2026年7月20日',
+        title: '热恋期依旧',
+        content: '别人的热恋期都是三个月，我们三个月都过了，热恋期感觉依旧没散去，还更想念，更爱彼此了！',
+        images: [],
+        special: false
     }
 ];
 
