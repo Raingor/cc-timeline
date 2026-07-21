@@ -348,7 +348,7 @@ const timelineData = [
         date: '2026年5月20日',
         title: '520的惊喜',
         content: '520之前，我们还喊着不过这个节日。其实我已经准备已久了——这个记录着我们点点滴滴的时间轴，是我悄悄为你写下的情书。\n\n早上还聊着520的事情，CC突然陷入了思考。我像AI一样逗她："你既思考，要不要上下文结合噶？" 她认真地说要从语言习惯判断一个人的性格。我顺势接上："请用中文回答我，我提供上下文"——然后，把链接发了过去。\n\n那一刻，她看到了这两个月来我用心记录的每一个瞬间。她说："太用心了吧"、"感动"、"好细致"、"我都好感谢有你的出现❤️❤️"。\n\n虽然短短2个月，却装满了好多好多回忆。她说这是520礼物吗？我说，都算既～\n\n我怕我会忘记细节，所以我会将细节log低。每一个和你在一起的瞬间，都值得被好好珍藏 💕',
-        images: ['images/5_20_chat_1.png', 'images/5_20_chat_2.png', 'images/5_20_chat_3.png'],
+        images: [],
         special: false
     },
     {
@@ -412,7 +412,7 @@ const timelineData = [
         date: '2026年5月31日',
         title: '陈皮与见面礼',
         content: '再次去江门新会，心心念念要给CC家里人送见面礼——虽然见面很久了，可这件事一直在我心里惦记着。带上CC一起去江门，买了一斤陈皮，想着陈皮泡茶可以让CC的爸爸咳嗽缓下来。\n\n随后我们又速速脚去了梁启超故居，上一次已经细细逛过了，这次人少了好多好多！再后来一时没想到去哪里，就去启明里附近，走了一圈三十三街。\n\n肚子饿了想找吃的，走了一公里路过去，想着能吃个漂亮饭、有点仪式感。结果上到二楼，店家才说：「不好意思，我们这里有人预定了，没有电话预定的话我们不服务的。」好嚣张！辛苦CC了，又累又饿又渴。\n\n我们一起走回停车场，一边走一边聊，时间才显得过得快——不然真的很难坚持走回去。最后我们毅然决然回到熟悉的小榄，吃了顿火锅。\n\n终于亲手把见面礼送到他们家了。从这开始，我就可以顺理成章上CC家里了 ❤️',
-        images: ['custom-images/IMG_1920.jpeg', 'custom-images/IMG_3931.JPG', 'custom-images/IMG_3932.JPG', 'custom-images/IMG_3935.JPG', 'custom-images/IMG_3938.JPG', 'custom-images/IMG_3950.JPG'],
+        images: [],
         special: false
     },
     {
@@ -612,7 +612,7 @@ const timelineData = [
         date: '2026年7月5日',
         title: '台湾卤面与沙溪古镇',
         content: '中午去了一家台湾老板开的店，吃了碗卤面，好吃！\n\n下午和CC去了中山沙溪镇，原计划是去石岐的，但记错时间了——其实是下周日才去。不过沙溪镇意外地好逛！古老的建筑和小巷子充满了历史感。\n\n我们从小红书看到的文记炒云吞没找到，但找到了老友记炒云吞！味道真不错，尤其是他们的酱料，非常独特 🍜',
-        images: ['custom-images/IMG_4610.webp', 'custom-images/IMG_2231.webp', 'custom-images/IMG_4615.webp', 'custom-images/IMG_4614.webp', 'custom-images/IMG_4618.webp'],
+        images: [],
         special: false
     },
     {
@@ -620,7 +620,7 @@ const timelineData = [
         date: '2026年7月5日',
         title: '酒店里的微醺球赛夜',
         content: '在附近散步时买了肉夹馍和凉皮带回酒店，我还提议买敬酒、维C水和雪碧，在酒店里调酒喝。\n\n我们就一边吃一边喝，看着粤BA比赛，这种惬意的二人世界，真的很舒服 🏀🍸',
-        images: ['custom-images/IMG_4612.webp', 'custom-images/IMG_4611.webp'],
+        images: [],
         special: false
     },
     {
@@ -628,7 +628,7 @@ const timelineData = [
         date: '2026年7月6日',
         title: '武藏食堂的炸猪扒',
         content: '本计划去亚金金，看到前面排了30桌就放弃了，改去附近的武藏食堂吃炸猪扒。虽然也要排队，但吃起来是真的好吃！\n\n最惊喜的是头顶上的电视正播放着哆啦A梦，我们边吃边看，发现动画里的大雄他们也在家里吃炸猪扒饭——太有共鸣了！🍛🎬',
-        images: ['custom-images/IMG_4624.webp', 'custom-images/IMG_4621.webp', 'custom-images/IMG_4620.webp'],
+        images: [],
         special: false
     },
     {
@@ -636,7 +636,7 @@ const timelineData = [
         date: '2026年7月6日',
         title: '石岐·纪念馆与菠萝啤',
         content: '带着这位中山女朋友去逛中山纪念馆，刚开不久，逛了一大圈，还是很有威严感的。\n\n今天来石岐的最大目的其实是买菠萝啤——我姐心念念上次试喝过的菠萝啤，所以我就拉着CC去买了。\n\n这天气真的是阴晴不定，一会儿暴雨一会儿大太阳，印证了无论日晒还是雨淋，我都在你身边！绕了个大圈走到一家咖啡店休息，一起拍了照片～ 🍻📸',
-        images: ['custom-images/IMG_4628.webp', 'custom-images/IMG_2232.webp', 'custom-images/IMG_2233.webp', 'custom-images/IMG_4639.webp', 'custom-images/IMG_4635.webp'],
+        images: [],
         special: false
     },
     {
@@ -644,7 +644,7 @@ const timelineData = [
         date: '2026年7月6日',
         title: '樱花里的晚餐与夜渡',
         content: '晚上去樱花里吃了干蒸排骨之类的，鲳鱼非常美味！\n\n吃完后我们完成了上次未完成的计划——骑着电动车渡江去对面看看。相比于CC的着装，我看着更local一些～可惜对面没有想象中热闹，没逛多久就坐渡轮回去了。\n\n回去的路上，带CC去喝了碗糖水，给这个周末画上甜甜的句号 🍬🛵',
-        images: ['custom-images/IMG_4649.webp', 'custom-images/IMG_4650.webp', 'custom-images/IMG_4651.webp', 'custom-images/IMG_4655.webp'],
+        images: [],
         special: false
     },
     {
@@ -652,7 +652,7 @@ const timelineData = [
         date: '2026年7月6日',
         title: 'CC的信',
         content: '结束这一周的旅途，CC又给我写了信～\n\n看完心里真的很开心。能让CC开心起来的话，做什么都是值得的。我还是依旧的行动派，过多的情话我不怎么会讲，只想用我的行为、行动来表达——我是真的很喜欢CC，会一直陪着她，保护她，照顾她，给她最好的生活和幸福。\n\n这份幸福可能不是大富大贵，但我会尽我所能给她最好的生活、最好的幸福，让CC能和我开开心心地游历更多地方，吃更多好吃的，一起走更多的一万步，一直走下去 💕',
-        images: ['custom-images/IMG_2235.webp', 'custom-images/IMG_2239.webp'],
+        images: [],
         special: false
     },
     {
