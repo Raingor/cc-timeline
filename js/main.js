@@ -612,7 +612,7 @@ const timelineData = [
         date: '2026年7月5日',
         title: '台湾卤面与沙溪古镇',
         content: '中午去了一家台湾老板开的店，吃了碗卤面，好吃！\n\n下午和CC去了中山沙溪镇，原计划是去石岐的，但记错时间了——其实是下周日才去。不过沙溪镇意外地好逛！古老的建筑和小巷子充满了历史感。\n\n我们从小红书看到的文记炒云吞没找到，但找到了老友记炒云吞！味道真不错，尤其是他们的酱料，非常独特 🍜',
-        images: ['custom-images/7_07_05_4.webp', 'custom-images/7_07_05_5.webp', 'custom-images/7_07_05_6.webp', 'custom-images/7_07_05_7.webp', 'custom-images/7_07_05_8.webp'],
+        images: ['images/7_07_05_4.webp', 'images/7_07_05_5.webp', 'images/7_07_05_6.webp', 'images/7_07_05_7.webp', 'images/7_07_05_8.webp'],
         special: false
     },
     {
@@ -620,7 +620,7 @@ const timelineData = [
         date: '2026年7月5日',
         title: '酒店里的微醺球赛夜',
         content: '在附近散步时买了肉夹馍和凉皮带回酒店，我还提议买敬酒、维C水和雪碧，在酒店里调酒喝。\n\n我们就一边吃一边喝，看着粤BA比赛，这种惬意的二人世界，真的很舒服 🏀🍸',
-        images: ['custom-images/7_07_05_9.webp', 'custom-images/7_07_05_10.webp'],
+        images: ['images/7_07_05_9.webp', 'images/7_07_05_10.webp'],
         special: false
     },
     {
@@ -628,7 +628,7 @@ const timelineData = [
         date: '2026年7月6日',
         title: '武藏食堂的炸猪扒',
         content: '本计划去亚金金，看到前面排了30桌就放弃了，改去附近的武藏食堂吃炸猪扒。虽然也要排队，但吃起来是真的好吃！\n\n最惊喜的是头顶上的电视正播放着哆啦A梦，我们边吃边看，发现动画里的大雄他们也在家里吃炸猪扒饭——太有共鸣了！🍛🎬',
-        images: ['custom-images/7_07_05_11.webp', 'custom-images/7_07_05_12.webp', 'custom-images/7_07_05_13.webp'],
+        images: ['images/7_07_05_11.webp', 'images/7_07_05_12.webp', 'images/7_07_05_13.webp'],
         special: false
     },
     {
@@ -636,7 +636,7 @@ const timelineData = [
         date: '2026年7月6日',
         title: '石岐·纪念馆与菠萝啤',
         content: '带着这位中山女朋友去逛中山纪念馆，刚开不久，逛了一大圈，还是很有威严感的。\n\n今天来石岐的最大目的其实是买菠萝啤——我姐心念念上次试喝过的菠萝啤，所以我就拉着CC去买了。\n\n这天气真的是阴晴不定，一会儿暴雨一会儿大太阳，印证了无论日晒还是雨淋，我都在你身边！绕了个大圈走到一家咖啡店休息，一起拍了照片～ 🍻📸',
-        images: ['custom-images/7_07_05_14.webp', 'custom-images/7_07_05_15.webp', 'custom-images/7_07_05_16.webp', 'custom-images/7_07_05_17.webp', 'custom-images/7_07_05_18.webp', 'custom-images/7_07_05_19.webp'],
+        images: ['images/7_07_05_14.webp', 'images/7_07_05_15.webp', 'images/7_07_05_16.webp', 'images/7_07_05_17.webp', 'images/7_07_05_18.webp', 'images/7_07_05_19.webp'],
         special: false
     },
     {
@@ -644,7 +644,7 @@ const timelineData = [
         date: '2026年7月6日',
         title: '樱花里的晚餐与夜渡',
         content: '晚上去樱花里吃了干蒸排骨之类的，鲳鱼非常美味！\n\n吃完后我们完成了上次未完成的计划——骑着电动车渡江去对面看看。相比于CC的着装，我看着更local一些～可惜对面没有想象中热闹，没逛多久就坐渡轮回去了。\n\n回去的路上，带CC去喝了碗糖水，给这个周末画上甜甜的句号 🍬🛵',
-        images: ['custom-images/7_07_05_20.webp', 'custom-images/7_07_05_21.webp', 'custom-images/7_07_05_22.webp', 'custom-images/7_07_05_23.webp'],
+        images: ['images/7_07_05_20.webp', 'images/7_07_05_21.webp', 'images/7_07_05_22.webp', 'images/7_07_05_23.webp'],
         special: false
     },
     {
@@ -652,7 +652,7 @@ const timelineData = [
         date: '2026年7月6日',
         title: 'CC的信',
         content: '结束这一周的旅途，CC又给我写了信～\n\n看完心里真的很开心。能让CC开心起来的话，做什么都是值得的。我还是依旧的行动派，过多的情话我不怎么会讲，只想用我的行为、行动来表达——我是真的很喜欢CC，会一直陪着她，保护她，照顾她，给她最好的生活和幸福。\n\n这份幸福可能不是大富大贵，但我会尽我所能给她最好的生活、最好的幸福，让CC能和我开开心心地游历更多地方，吃更多好吃的，一起走更多的一万步，一直走下去 💕',
-        images: ['custom-images/7_07_05_24.webp', 'custom-images/7_07_05_25.webp'],
+        images: ['images/7_07_05_24.webp', 'images/7_07_05_25.webp'],
         special: false
     },
     {
@@ -777,6 +777,38 @@ const timelineData = [
         title: '热恋期依旧',
         content: '别人的热恋期都是三个月，我们三个月都过了，热恋期感觉依旧没散去，还更想念，更爱彼此了！',
         images: [],
+        special: false
+    },
+    {
+        id: 96,
+        date: '2026年7月25日',
+        title: '喜茶·腐竹豆浆',
+        content: '白天带着CC去品尝喜茶的新品——腐竹豆浆。味道不错，豆浆的香味很浓郁，腐竹的口感也很独特。CC对这个新品感兴趣，所以我们还是点了一杯来喝。店里的装修也蛮特别的，CC对这个环境很喜欢，拍了很多照片 ☕📸',
+        images: ['images/IMG_2475.webp', 'images/IMG_2476.webp', 'images/IMG_5061.webp', 'images/IMG_5070.webp'],
+        special: false
+    },
+    {
+        id: 97,
+        date: '2026年7月25日',
+        title: '台风天的买菜奇遇',
+        content: '晚上我们计划自己在家做饭吃。去市场的时候经历了一次难忘的买菜时间——碰巧遇到了台风天！进去市场没多久，买得7788的时候，突然刮起了大风和大大的暴雨。为什么难忘呢？因为我们走过来市场的时候还是大大的太阳，一下子突然就暴雨加大风了，把我们困在了市场里面。我们只能在市场里躲雨，等了大概半个小时才稍微停了一点雨才敢出去。虽然有点狼狈，但也算是一次难忘的经历 🌧️',
+        images: [],
+        special: false
+    },
+    {
+        id: 98,
+        date: '2026年7月25日',
+        title: '温馨的家常菜晚餐',
+        content: '晚上我就露了一手，做了粉丝虾、可乐鸡翅和炒四季豆，CC帮我打下手。我在厨房搞了个把小时，洗菜、洗虾、泡粉丝等等功夫，弄了一个半小时，终于把所有的菜都做好了。我们两个人一起吃饭的时候，感觉特别温馨和幸福。虽然只是简单的家常菜，但我们都觉得非常好吃，也很满足 🍳💕',
+        images: ['images/IMG_5086.webp'],
+        special: false
+    },
+    {
+        id: 99,
+        date: '2026年7月26日',
+        title: '接CC家人·动漫广州一日游',
+        content: '周日早上睡了个懒觉，起床后立马去了广州南站接上CC的家人。然后带着CC家人们去吃寿司，带他们体验了一波广州的动漫文化——逛了动漫星城、地王广场，里面全是coser和动漫周边的店铺，CC的家人们都觉得非常新奇和有趣。逛到最后真的太累了，下午3点多的时候，我就带着CC家人们去星巴克坐一坐，喝点咖啡，休息一下。带着买到的Joke Bear在星巴克里拍照片，我们还一起合照了！休息好了后，又继续去了时尚天河——今天可谓是体力都拉爆了，把两位家长都累坏了。最后决定早点各回各家，他们坐高铁回去，我也坐地铁回家了。非常充实的一个周末，很开心很快乐，因为这次买了小的Joke Bear，非常适合CC之前想做的带Joke Bear去拍照的计划 🎉🚄',
+        images: ['images/IMG_5090.webp', 'images/IMG_5106.webp', 'images/IMG_5114.webp', 'images/IMG_5124.webp', 'images/IMG_5125.webp', 'images/IMG_5126.webp'],
         special: false
     }
 ];
