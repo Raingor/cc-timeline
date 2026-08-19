@@ -848,7 +848,7 @@ const timelineData = [
         date: '2026年8月15日',
         title: '吴财记的云吞面',
         content: '周六一早，我们去了吴财记面馆——前一晚看到杨千嬅也去过这家店，于是决定来打卡。点了经典的云吞面、牛腩面和炸云吞，太好吃了，我们又吃得饱饱的～一碗面里，藏着属于我们两个人的打卡小故事 🍜',
-        images: ['images/8_15_wucaiji_1.jpeg', 'images/8_15_wucaiji_2.jpeg'],
+        images: ['images/8_15_wucaiji_1.jpeg', 'images/8_15_wucaiji_2.jpeg', 'images/8_15_matcha_cake_shop.jpeg', 'images/8_15_matcha_cake.jpeg'],
         special: false
     },
     {
@@ -856,7 +856,7 @@ const timelineData = [
         date: '2026年8月15日',
         title: '抢限量抹茶蛋糕',
         content: '下午去了一家CC看中的甜品店，以抹茶蛋糕出名，但月底就要结业了，所以我们赶紧去打卡。店里人不多，但等抹茶蛋糕出炉的人却很多，大家随时待命的样子，时不时问老板娘什么时候有。终于老板娘说「可以开始点了」，CC立马好迅速地在手机上先下单抹茶蛋糕，再第二次下单其他东西——这样确保能抢到限量版。为了一块抹茶蛋糕，我们也是拼了，真的太搞笑了 🍰',
-        images: ['images/8_15_matcha_cake_shop.jpeg', 'images/8_15_matcha_cake.jpeg'],
+        images: ['images/8_15_dayuanfu_1.jpeg', 'images/8_15_dayuanfu_2.jpeg', 'images/8_15_riverwalk.jpeg', 'images/8_15_xinghuan_1.jpeg', 'images/8_15_xinghuan_2.jpeg'],
         special: false
     },
     {
@@ -864,7 +864,7 @@ const timelineData = [
         date: '2026年8月15日',
         title: '大元帅府与星环江边漫步',
         content: '在我的连哄带骗下，我和CC游走了一大段海珠区的地方，还去了一趟大元帅府。虽然门票免费，但里面展览内容很丰富，老照片和老物件让我们对历史有了更深的了解。参观完后行走在江边，看着夕阳，虽然累可是有点小浪漫。牵着CC的手一直走，带她去看星环的夜晚，大片的广州夜景尽收眼底～一路上我们都带着joke bear出游，去到哪拍到哪 🏙️🌇',
-        images: ['images/8_15_dayuanfu_1.jpeg', 'images/8_15_dayuanfu_2.jpeg', 'images/8_15_riverwalk.jpeg', 'images/8_15_xinghuan_1.jpeg', 'images/8_15_xinghuan_2.jpeg', 'images/8_15_jokebear_1.jpeg'],
+        images: ['images/8_15_jokebear_1.jpeg', 'images/8_15_ultraman_book.jpeg', 'images/8_15_ultraman_unbox.jpeg'],
         special: false
     },
     {
@@ -872,7 +872,7 @@ const timelineData = [
         date: '2026年8月15日',
         title: '被惦记的奥特曼画册',
         content: '晚上回家地铁旁吃了鸡煲，分量不少，我们还拿了不少素材，好饱好饱。中间还有一个小插曲：周六我手机一直显示有个快递在快递柜要拿，我在想没买东西怎么会有快递，CC就抢着说，可能是上次她买咖啡给我的时候不小心多付了一次，所以送多一次。这么不合常理的话都能说出来，我就配合着她的表演一直到晚上。回家拆开一看，原来是奥特曼的60周年画册——之前在书店看到没买一直是我的心头遗憾，CC却记在心上了。当有一个人能把自己喜欢的东西一直惦记在心里，这种被惦记着的感觉，真的很幸福很开心 📦✨',
-        images: ['images/8_15_chickenpot.jpeg', 'images/8_15_ultraman_book.jpeg', 'images/8_15_ultraman_unbox.jpeg'],
+        images: ['images/8_15_chickenpot.jpeg'],
         special: false
     },
     {
@@ -880,7 +880,7 @@ const timelineData = [
         date: '2026年8月16日',
         title: '佛山local早餐',
         content: '周日决定去趟佛山。原计划是去佛山一家小店喝早茶，去到后才发现门店装修没得吃，幸亏我提前做了准备，带CC去了另一家很local的早餐店吃肠粉和粥。我们也是点了好多来吃，吃得饱饱的一顿～有Plan B的男人，靠谱 🥟',
-        images: ['images/8_16_fsbreakfast.jpeg'],
+        images: ['images/8_16_lingnan_1.jpeg'],
         special: false
     },
     {
@@ -888,7 +888,7 @@ const timelineData = [
         date: '2026年8月16日',
         title: '岭南新天地与药锅柠檬茶',
         content: '随后按计划去了佛山的岭南新天地，走了一下午，逛了很多小店。带CC去喝了那边一家专门用药锅来煮柠檬茶的小店，味道很不错。因为太热了，我们也顺便歇了一下——吹着空调喝着柠檬茶，才是逛gai的正确打开方式 🍋',
-        images: ['images/8_16_lingnan_1.jpeg', 'images/8_16_lingnan_2.jpeg', 'images/8_16_lemontea.jpeg'],
+        images: ['images/8_16_lingnan_2.jpeg', 'images/8_16_lemontea.jpeg', 'images/8_16_qiandenghu_1.jpeg', 'images/8_16_qiandenghu_2.jpeg', 'images/8_16_boat_1.jpeg', 'images/8_16_boat_2.jpeg'],
         special: false
     },
     {
@@ -896,7 +896,7 @@ const timelineData = [
         date: '2026年8月16日',
         title: '千灯湖小船游',
         content: '下午的时间，按照原计划去了佛山千灯湖～CC一直念叨着要去千灯湖坐小船，我就带着她去到那，坐着小船游了一圈。还是很开心很快乐的！千灯湖的风，吹得人心都化了 🚣',
-        images: ['images/8_16_qiandenghu_1.jpeg', 'images/8_16_qiandenghu_2.jpeg', 'images/8_16_boat_1.jpeg', 'images/8_16_boat_2.jpeg'],
+        images: [],
         special: false
     },
     {
@@ -904,7 +904,7 @@ const timelineData = [
         date: '2026年8月16日',
         title: '幻狮湖边漂亮饭',
         content: '快6点的时候，按照我的原计划——带着CC去幻狮门店吃个漂亮饭。幸亏我们来得还算早，提前坐到了靠湖边的位置。我们就看着湖，看着夕阳，从天亮吃到天黑。吃了好多东西，沙拉、披萨、鸡米花、薯条，太多了，这一顿又是超级无敌饱。吃完沿着湖边一直走回停车场，回想这一天还是很幸福的。虽然很累，可是我们都很开心——每天都能牵着喜欢的人，去宁静的地方，无忧无虑的想吃就吃想逛就逛，那种自由的感觉真好 🌅🍕',
-        images: ['images/8_16_huanxi_1.jpeg', 'images/8_16_huanxi_2.jpeg', 'images/8_16_huanxi_3.jpeg'],
+        images: ['images/8_16_huanxi_1.jpeg', 'images/8_16_huanxi_2.jpeg', 'images/8_16_huanxi_3.jpeg', 'images/8_16_fsbreakfast.jpeg'],
         special: false
     },
     {
