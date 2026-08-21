@@ -1,60 +1,67 @@
 /* ============================================
    🐻 自嘲熊 · 纪念时光
-   主题：温暖治愈自嘲熊风格
+   主题：超可爱自嘲熊治愈风格
    字体：ZCOOL KuaiLe (标题) + Noto Sans SC (正文)
    ============================================ */
 
 /* ---- CSS Variables ---- */
 :root {
-    /* 自嘲熊核心配色 - 温暖治愈系 */
-    --dora-blue: #8B7355;
-    --dora-blue-dark: #6B5B4F;
-    --dora-blue-deeper: #5C4D42;
-    --dora-blue-light: #A08B6F;
-    --dora-blue-pale: #D4C4B0;
-    --dora-white: #FFFFFF;
-    --dora-red: #C75B5B;
-    --dora-red-light: #E88A8A;
-    --dora-red-dark: #A04040;
-    --dora-gold: #D4A574;
-    --dora-gold-light: #E8C9A0;
-    --dora-yellow: #F0D9A0;
-    --dora-bg: #FAF6F0;
-    --dora-bg-alt: #F5EDE3;
+    /* 自嘲熊核心配色 - 更温暖治愈的奶油色系 */
+    --bear-brown: #7B5E3F;
+    --bear-brown-dark: #5C3D2E;
+    --bear-brown-light: #A08B6F;
+    --bear-cream: #FFF8F0;
+    --bear-milk: #FFF5E6;
+    --bear-blush: #FFB5A7;
+    --bear-pink: #FF9EAA;
+    --bear-pink-light: #FFD6D9;
+    --bear-rose: #E85D75;
+    --bear-rose-light: #F0A0AD;
+    --bear-honey: #F4D03F;
+    --bear-honey-light: #F9E79F;
+    --bear-bg: #FFF9F2;
+    --bear-bg-alt: #FFF0E6;
+    --bear-surface: #FFFFFF;
+    --bear-text: #4A3F35;
+    --bear-text-light: #8B7D6B;
+    --bear-accent: #E85D75;
+    --bear-accent-light: #FFB5A7;
 
     /* 辅助色 */
     --gray-50: #FAFAFA;
     --gray-100: #F5F5F5;
-    --gray-200: #E0E0E0;
-    --gray-300: #BDBDBD;
-    --gray-500: #9E9E9E;
-    --gray-700: #424242;
-    --gray-900: #212121;
+    --gray-200: #E8E0D8;
+    --gray-300: #D4C8BC;
+    --gray-500: #9E9589;
+    --gray-700: #5C5348;
+    --gray-900: #3D3630;
 
-    /* 阴影层级 */
-    --shadow-xs: 0 1px 3px rgba(139, 115, 85, 0.12);
-    --shadow-sm: 0 2px 8px rgba(139, 115, 85, 0.15);
-    --shadow-md: 0 4px 16px rgba(139, 115, 85, 0.2);
-    --shadow-lg: 0 8px 32px rgba(139, 115, 85, 0.25);
-    --shadow-xl: 0 16px 48px rgba(139, 115, 85, 0.3);
+    /* 阴影层级 - 更柔和的奶油色阴影 */
+    --shadow-xs: 0 2px 4px rgba(139, 115, 85, 0.08);
+    --shadow-sm: 0 3px 10px rgba(139, 115, 85, 0.1);
+    --shadow-md: 0 6px 20px rgba(139, 115, 85, 0.12);
+    --shadow-lg: 0 12px 40px rgba(139, 115, 85, 0.15);
+    --shadow-xl: 0 20px 60px rgba(139, 115, 85, 0.18);
 
-    /* 圆角 */
-    --radius-sm: 8px;
-    --radius-md: 16px;
-    --radius-lg: 24px;
-    --radius-xl: 32px;
+    /* 圆角 - 更圆润 */
+    --radius-sm: 12px;
+    --radius-md: 20px;
+    --radius-lg: 28px;
+    --radius-xl: 36px;
+    --radius-full: 999px;
 
     /* 时间轴 */
-    --timeline-line: #8B7355;
-    --timeline-dot: #8B7355;
+    --timeline-line: #E8D5C4;
+    --timeline-dot: #E85D75;
 
     /* 字体 */
     --font-display: 'ZCOOL KuaiLe', cursive;
     --font-body: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
 
-    /* 动画时长 */
+    /* 动画 */
     --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
     --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 /* ---- Reset & Base ---- */
@@ -71,34 +78,35 @@ html {
 
 body {
     font-family: var(--font-body);
-    background: var(--dora-bg);
+    background: var(--bear-bg);
     min-height: 100vh;
-    color: var(--gray-700);
+    color: var(--bear-text);
     line-height: 1.7;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
 }
 
-/* 噪声纹理 overlay */
+/* 可爱的背景纹理 - 小圆点 */
 body::before {
     content: '';
     position: fixed;
     inset: 0;
     z-index: 9999;
     pointer-events: none;
-    opacity: 0.03;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
-    background-repeat: repeat;
-    background-size: 256px 256px;
+    opacity: 0.025;
+    background-image: radial-gradient(circle, var(--bear-brown) 1px, transparent 1px);
+    background-size: 24px 24px;
 }
 
-/* 选中高亮 */
+/* 选中高亮 - 粉色 */
 ::selection {
-    background: var(--dora-blue);
-    color: var(--dora-white);
+    background: var(--bear-blush);
+    color: var(--bear-brown-dark);
 }
 
-/* ---- 自嘲熊漂浮装饰 ---- */
+/* ============================================
+   飘浮装饰元素 - 自嘲熊动态图
+   ============================================ */
 .floating-decorations {
     position: fixed;
     inset: 0;
@@ -109,49 +117,48 @@ body::before {
 
 .deco-bear {
     position: absolute;
-    width: 60px;
-    height: 60px;
-    opacity: 0.15;
-    animation: float-bear 10s var(--ease-out) infinite;
+    width: 70px;
+    height: 70px;
+    opacity: 0.12;
+    animation: float-bear 8s var(--ease-out) infinite;
     will-change: transform;
-    border-radius: 12px;
+    border-radius: 16px;
     object-fit: cover;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1));
 }
 
-.deco-bear-1 { top: 8%; left: 5%; animation-delay: 0s; width: 70px; height: 70px; }
-.deco-bear-2 { top: 25%; right: 10%; animation-delay: -3s; width: 55px; height: 55px; }
-.deco-bear-3 { top: 50%; left: 3%; animation-delay: -6s; width: 65px; height: 65px; }
-.deco-bear-4 { top: 70%; right: 5%; animation-delay: -2s; width: 50px; height: 50px; }
-.deco-bear-5 { top: 15%; right: 20%; animation-delay: -8s; width: 45px; height: 45px; }
-.deco-bear-6 { top: 60%; left: 8%; animation-delay: -5s; width: 55px; height: 55px; }
+.deco-bear-1 { top: 5%; left: 3%; animation-delay: 0s; width: 80px; height: 80px; }
+.deco-bear-2 { top: 20%; right: 8%; animation-delay: -2s; width: 65px; height: 65px; }
+.deco-bear-3 { top: 45%; left: 2%; animation-delay: -5s; width: 75px; height: 75px; }
+.deco-bear-4 { top: 65%; right: 3%; animation-delay: -1s; width: 60px; height: 60px; }
+.deco-bear-5 { top: 12%; right: 18%; animation-delay: -7s; width: 55px; height: 55px; }
+.deco-bear-6 { top: 55%; left: 6%; animation-delay: -4s; width: 70px; height: 70px; }
 
 @keyframes float-bear {
     0%   { transform: translateY(0) rotate(0deg) scale(1); }
-    25%  { transform: translateY(-15px) rotate(3deg) scale(1.03); }
+    25%  { transform: translateY(-18px) rotate(4deg) scale(1.04); }
     50%  { transform: translateY(0) rotate(0deg) scale(1); }
-    75%  { transform: translateY(10px) rotate(-3deg) scale(0.97); }
+    75%  { transform: translateY(12px) rotate(-3deg) scale(0.96); }
     100% { transform: translateY(0) rotate(0deg) scale(1); }
 }
 
-/* 飘浮装饰元素已由上方 .deco-bear 样式替代 */
-
-/* ---- 旧的 .deco 样式已移除 ---- */
-
-/* ---- 月份导航 ---- */
+/* ============================================
+   月份导航 - 更可爱的胶囊按钮
+   ============================================ */
 .month-nav {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(250, 246, 240, 0.85);
-    backdrop-filter: blur(16px) saturate(1.8);
-    -webkit-backdrop-filter: blur(16px) saturate(1.8);
-    border-bottom: 2px solid rgba(139, 115, 85, 0.15);
-    padding: 10px 0;
+    background: rgba(255, 249, 242, 0.92);
+    backdrop-filter: blur(20px) saturate(1.8);
+    -webkit-backdrop-filter: blur(20px) saturate(1.8);
+    border-bottom: 2px solid rgba(232, 213, 196, 0.4);
+    padding: 14px 0;
     transition: box-shadow 0.3s ease;
 }
 
 .month-nav.scrolled {
-    box-shadow: 0 4px 20px rgba(139, 115, 85, 0.15);
+    box-shadow: 0 4px 20px rgba(139, 115, 85, 0.1);
 }
 
 .month-nav-inner {
@@ -159,7 +166,7 @@ body::before {
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
-    gap: 8px;
+    gap: 10px;
     overflow-x: auto;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
@@ -171,83 +178,80 @@ body::before {
 
 .month-nav-btn {
     flex-shrink: 0;
-    padding: 8px 20px;
-    border: 2px solid var(--dora-blue);
-    border-radius: 999px;
+    padding: 10px 22px;
+    border: 2.5px solid var(--bear-brown-light);
+    border-radius: var(--radius-full);
     background: transparent;
-    color: var(--dora-blue-dark);
+    color: var(--bear-brown);
     font-family: var(--font-body);
-    font-size: 0.9rem;
-    font-weight: 700;
+    font-size: 0.88rem;
+    font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s var(--ease-out);
+    transition: all 0.35s var(--ease-out);
     white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+}
+
+.month-nav-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--bear-pink-light), var(--bear-honey-light));
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    border-radius: var(--radius-full);
 }
 
 .month-nav-btn:hover {
-    background: rgba(139, 115, 85, 0.1);
-    transform: translateY(-1px);
+    border-color: var(--bear-pink);
+    color: var(--bear-rose);
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 4px 12px rgba(232, 93, 117, 0.15);
+}
+
+.month-nav-btn:hover::before {
+    opacity: 0.3;
 }
 
 .month-nav-btn.active {
-    background: var(--dora-blue);
-    color: var(--dora-white);
-    border-color: var(--dora-blue);
-    box-shadow: 0 2px 12px rgba(139, 115, 85, 0.35);
+    background: linear-gradient(135deg, var(--bear-rose), var(--bear-pink));
+    color: var(--bear-cream);
+    border-color: var(--bear-rose);
+    box-shadow: 0 4px 16px rgba(232, 93, 117, 0.25);
+    transform: translateY(-2px);
 }
 
-/* ---- Hero 区域 ---- */
+.month-nav-btn.active::before {
+    display: none;
+}
+
+/* ============================================
+   Hero 区域 - 更可爱的自嘲熊
+   ============================================ */
 .hero {
     position: relative;
     z-index: 1;
-    padding: 50px 20px 40px;
+    padding: 60px 20px 50px;
     text-align: center;
     background: linear-gradient(160deg,
-        var(--dora-blue-deeper) 0%,
-        var(--dora-blue) 40%,
-        var(--dora-blue-light) 100%
+        var(--bear-brown-dark) 0%,
+        var(--bear-brown) 40%,
+        var(--bear-brown-light) 100%
     );
     overflow: hidden;
 }
 
-/* 自嘲熊 Hero 形象 */
-.hero-bear {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 10px;
-}
-
-.hero-bear-img {
-    width: 140px;
-    height: auto;
-    border-radius: 50%;
-    filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.15));
-    animation: levitate 3s var(--ease-out) infinite;
-    transition: transform 0.3s ease;
-    border: 4px solid rgba(255, 255, 255, 0.3);
-}
-
-.hero-bear-img:hover {
-    transform: scale(1.08) rotate(-3deg);
-}
-
-.hero-bear-shadow {
-    width: 80px;
-    height: 14px;
-    margin: -8px auto 0;
-    background: rgba(0, 0, 0, 0.12);
-    border-radius: 50%;
-    animation: shadow-pulse 3s var(--ease-out) infinite;
-}
-
+/* 可爱的背景装饰 */
 .hero-bg-pattern {
     position: absolute;
     inset: 0;
-    opacity: 0.06;
+    opacity: 0.04;
     background-image:
-        radial-gradient(circle at 20% 50%, white 1px, transparent 1px),
-        radial-gradient(circle at 80% 50%, white 1px, transparent 1px);
-    background-size: 30px 30px;
+        radial-gradient(circle at 25% 30%, white 2px, transparent 2px),
+        radial-gradient(circle at 75% 60%, white 2px, transparent 2px),
+        radial-gradient(circle at 50% 80%, white 1.5px, transparent 1.5px);
+    background-size: 60px 60px, 80px 80px, 40px 40px;
 }
 
 .hero-content {
@@ -256,65 +260,129 @@ body::before {
     margin: 0 auto;
 }
 
-/* 哆啦A梦形象 - 已由自嘲熊形象替代 */
+/* 自嘲熊 Hero 形象 - 更可爱 */
+.hero-bear {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.hero-bear-img {
+    width: 160px;
+    height: auto;
+    border-radius: 50%;
+    filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.15));
+    animation: levitate 3s var(--ease-out) infinite;
+    transition: transform 0.4s var(--ease-bounce);
+    border: 5px solid rgba(255, 255, 255, 0.35);
+    background: var(--bear-cream);
+    padding: 4px;
+}
+
+.hero-bear-img:hover {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+/* 耳朵装饰 */
+.hero-bear::before,
+.hero-bear::after {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: var(--bear-brown);
+    border-radius: 50% 50% 40% 40%;
+    top: -5px;
+    z-index: -1;
+    border: 3px solid rgba(255,255,255,0.3);
+}
+
+.hero-bear::before {
+    left: 15px;
+    transform: rotate(-15deg);
+}
+
+.hero-bear::after {
+    right: 15px;
+    transform: rotate(15deg);
+}
+
+.hero-bear-shadow {
+    width: 90px;
+    height: 16px;
+    margin: -10px auto 0;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    animation: shadow-pulse 3s var(--ease-out) infinite;
+}
 
 @keyframes levitate {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+    50% { transform: translateY(-12px); }
 }
 
 @keyframes shadow-pulse {
     0%, 100% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(0.85); opacity: 0.5; }
+    50% { transform: scale(0.85); opacity: 0.6; }
 }
 
 .hero-title {
     font-family: var(--font-display);
-    color: var(--dora-white);
-    margin-bottom: 8px;
+    color: var(--bear-cream);
+    margin-bottom: 12px;
 }
 
 .hero-title-line {
     display: block;
-    font-size: 3rem;
+    font-size: 3.2rem;
     text-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
     letter-spacing: 4px;
+    animation: title-bounce 1s var(--ease-spring) 0.3s both;
+}
+
+@keyframes title-bounce {
+    0% { opacity: 0; transform: translateY(20px) scale(0.9); }
+    70% { transform: translateY(-5px) scale(1.02); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 .hero-title-sub {
     display: block;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 400;
     opacity: 0.9;
-    margin-top: 2px;
+    margin-top: 6px;
     font-family: var(--font-body);
+    letter-spacing: 2px;
 }
 
 .hero-counter {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     color: rgba(255, 255, 255, 0.95);
     font-weight: 500;
-    margin: 10px 0 6px;
-    background: rgba(255, 255, 255, 0.12);
+    margin: 14px 0 8px;
+    background: rgba(255, 255, 255, 0.15);
     display: inline-block;
-    padding: 6px 20px;
-    border-radius: 999px;
+    padding: 8px 24px;
+    border-radius: var(--radius-full);
     backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.1);
 }
 
 .hero-counter strong {
-    color: var(--dora-gold-light);
+    color: var(--bear-honey-light);
     font-weight: 700;
 }
 
 .hero-quote {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.92rem;
+    color: rgba(255, 255, 255, 0.75);
     font-style: italic;
-    margin-top: 6px;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
 }
 
-/* Hero 波浪分割 */
+/* Hero 波浪分割 - 更柔和 */
 .hero-wave {
     position: absolute;
     bottom: -1px;
@@ -327,10 +395,12 @@ body::before {
 .hero-wave svg {
     display: block;
     width: 100%;
-    height: 50px;
+    height: 60px;
 }
 
-/* ---- 主内容区 ---- */
+/* ============================================
+   主内容区
+   ============================================ */
 .main-content {
     position: relative;
     z-index: 2;
@@ -339,13 +409,15 @@ body::before {
     padding: 0 20px;
 }
 
-/* ---- 时间轴 ---- */
+/* ============================================
+   时间轴 - 更可爱的设计
+   ============================================ */
 .timeline {
     position: relative;
-    padding: 40px 0 20px;
+    padding: 50px 0 30px;
 }
 
-/* 中央时间轴线 */
+/* 中央时间轴线 - 更柔和 */
 .timeline::before {
     content: '';
     position: absolute;
@@ -358,18 +430,20 @@ body::before {
         180deg,
         transparent 0%,
         var(--timeline-line) 60px,
-        var(--dora-blue-light) 50%,
+        var(--bear-pink-light) 50%,
         var(--timeline-line) calc(100% - 60px),
         transparent 100%
     );
     border-radius: 2px;
-    box-shadow: 0 0 12px rgba(139, 115, 85, 0.2);
+    box-shadow: 0 0 16px rgba(232, 93, 117, 0.15);
 }
 
-/* ---- 月份分组标题 ---- */
+/* ============================================
+   月份分组标题 - 更可爱
+   ============================================ */
 .month-group-title {
     position: relative;
-    margin: 0 auto 30px;
+    margin: 0 auto 35px;
     text-align: center;
     width: 100%;
     padding: 0 20px;
@@ -379,27 +453,43 @@ body::before {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    padding: 10px 28px;
-    background: var(--dora-white);
-    border: 2px solid var(--dora-blue);
-    border-radius: 999px;
+    padding: 12px 32px;
+    background: var(--bear-surface);
+    border: 2.5px solid var(--bear-pink-light);
+    border-radius: var(--radius-full);
     font-family: var(--font-display);
-    font-size: 1.3rem;
-    color: var(--dora-blue-dark);
+    font-size: 1.2rem;
+    color: var(--bear-rose);
     box-shadow: var(--shadow-sm);
     position: relative;
     z-index: 2;
+    transition: all 0.3s var(--ease-out);
+}
+
+.month-group-label:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: var(--shadow-md);
+    border-color: var(--bear-pink);
 }
 
 .month-group-label .month-emoji {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    animation: emoji-wiggle 2s var(--ease-out) infinite;
 }
 
-/* ---- 时间轴节点 ---- */
+@keyframes emoji-wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-8deg); }
+    75% { transform: rotate(8deg); }
+}
+
+/* ============================================
+   时间轴节点 - 更可爱的卡片
+   ============================================ */
 .timeline-item {
     position: relative;
     width: 50%;
-    padding: 0 40px 40px;
+    padding: 0 40px 45px;
     opacity: 0;
     transform: translateY(40px) scale(0.97);
     transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
@@ -425,95 +515,104 @@ body::before {
     display: none;
 }
 
-/* ---- 时间轴圆点 ---- */
+/* ============================================
+   时间轴圆点 - 更可爱的心形/圆形
+   ============================================ */
 .timeline-dot {
     position: absolute;
     top: 8px;
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
     background: var(--timeline-dot);
-    border: 4px solid var(--dora-white);
+    border: 5px solid var(--bear-surface);
     border-radius: 50%;
-    box-shadow: 0 0 0 4px var(--dora-blue-light), var(--shadow-sm);
+    box-shadow: 0 0 0 4px var(--bear-pink-light), var(--shadow-sm);
     z-index: 5;
     transition: all 0.4s var(--ease-spring);
 }
 
 .timeline-item:nth-child(odd) .timeline-dot {
-    right: -11px;
+    right: -12px;
 }
 
 .timeline-item:nth-child(even) .timeline-dot {
-    left: -11px;
+    left: -12px;
 }
 
 .timeline-item.visible .timeline-dot {
-    box-shadow: 0 0 0 4px var(--dora-blue-light), 0 0 16px rgba(139, 115, 85, 0.3);
+    box-shadow: 0 0 0 4px var(--bear-pink-light), 0 0 20px rgba(232, 93, 117, 0.25);
 }
 
-/* 特殊节点（纪念日）脉冲 */
+/* 特殊节点（纪念日）脉冲 - 更可爱 */
 .timeline-item.special .timeline-dot {
-    width: 28px;
-    height: 28px;
-    top: 5px;
-    background: var(--dora-red);
-    box-shadow: 0 0 0 4px var(--dora-red-light), var(--shadow-md);
+    width: 32px;
+    height: 32px;
+    top: 4px;
+    background: linear-gradient(135deg, var(--bear-rose), var(--bear-pink));
+    box-shadow: 0 0 0 5px var(--bear-pink-light), var(--shadow-md);
     animation: pulse-dot 2s var(--ease-out) infinite;
 }
 
 @keyframes pulse-dot {
-    0%, 100% { box-shadow: 0 0 0 4px var(--dora-red-light), var(--shadow-md); }
-    50% { box-shadow: 0 0 0 10px rgba(255, 107, 107, 0.3), var(--shadow-md); }
+    0%, 100% { box-shadow: 0 0 0 5px var(--bear-pink-light), var(--shadow-md); transform: scale(1); }
+    50% { box-shadow: 0 0 0 12px rgba(255, 179, 167, 0.25), var(--shadow-md); transform: scale(1.05); }
 }
 
-/* ---- 日期标签 ---- */
+/* ============================================
+   日期标签 - 更可爱的胶囊
+   ============================================ */
 .timeline-date {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    padding: 5px 16px;
-    background: linear-gradient(135deg, var(--dora-blue), var(--dora-blue-dark));
-    color: var(--dora-white);
+    padding: 6px 18px;
+    background: linear-gradient(135deg, var(--bear-brown), var(--bear-brown-light));
+    color: var(--bear-cream);
     font-size: 0.82rem;
-    font-weight: 500;
-    border-radius: 999px;
-    margin-bottom: 12px;
+    font-weight: 600;
+    border-radius: var(--radius-full);
+    margin-bottom: 14px;
     box-shadow: var(--shadow-sm);
     position: relative;
     z-index: 3;
+    letter-spacing: 0.5px;
 }
 
 .timeline-item.special .timeline-date {
-    background: linear-gradient(135deg, var(--dora-red), var(--dora-red-dark));
+    background: linear-gradient(135deg, var(--bear-rose), var(--bear-pink));
+    box-shadow: 0 2px 10px rgba(232, 93, 117, 0.2);
 }
 
-/* ---- 卡片 ---- */
+/* ============================================
+   卡片 - 更圆润可爱
+   ============================================ */
 .timeline-card {
-    background: var(--dora-white);
+    background: var(--bear-surface);
     border-radius: var(--radius-md);
-    padding: 24px;
+    padding: 28px;
     box-shadow: var(--shadow-xs);
     transition: all 0.4s var(--ease-out);
-    border: 2px solid transparent;
+    border: 2.5px solid transparent;
     position: relative;
     overflow: hidden;
 }
 
-/* 卡片顶部装饰条 */
+/* 卡片顶部装饰条 - 渐变色 */
 .timeline-card::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--dora-blue), var(--dora-blue-light), var(--dora-blue));
+    height: 5px;
+    background: linear-gradient(90deg, var(--bear-pink), var(--bear-honey), var(--bear-pink));
     opacity: 0;
     transition: opacity 0.3s ease;
+    border-radius: 3px 3px 0 0;
 }
 
 .timeline-item.special .timeline-card::before {
-    background: linear-gradient(90deg, var(--dora-red), var(--dora-red-light), var(--dora-red));
+    background: linear-gradient(90deg, var(--bear-rose), var(--bear-pink), var(--bear-rose));
 }
 
 .timeline-card:hover::before {
@@ -522,19 +621,19 @@ body::before {
 
 .timeline-card:hover {
     box-shadow: var(--shadow-md);
-    border-color: rgba(139, 115, 85, 0.2);
-    transform: translateY(-4px);
+    border-color: rgba(232, 93, 117, 0.15);
+    transform: translateY(-5px) scale(1.01);
 }
 
 .timeline-item.special .timeline-card:hover {
-    border-color: rgba(229, 57, 53, 0.2);
+    border-color: rgba(232, 93, 117, 0.25);
 }
 
 /* 卡片小三角（指向时间轴） */
 .timeline-card::after {
     content: '';
     position: absolute;
-    top: 14px;
+    top: 16px;
     width: 0;
     height: 0;
     border-style: solid;
@@ -543,21 +642,23 @@ body::before {
 .timeline-item:nth-child(odd) .timeline-card::after {
     right: -10px;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent var(--dora-white);
+    border-color: transparent transparent transparent var(--bear-surface);
 }
 
 .timeline-item:nth-child(even) .timeline-card::after {
     left: -10px;
     border-width: 10px 10px 10px 0;
-    border-color: transparent var(--dora-white) transparent transparent;
+    border-color: transparent var(--bear-surface) transparent transparent;
 }
 
-/* ---- 卡片标题 ---- */
+/* ============================================
+   卡片标题 - 更可爱
+   ============================================ */
 .timeline-title {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    color: var(--dora-blue-dark);
-    margin-bottom: 10px;
+    color: var(--bear-brown-dark);
+    margin-bottom: 12px;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -566,24 +667,28 @@ body::before {
 }
 
 .timeline-item.special .timeline-title {
-    color: var(--dora-red);
+    color: var(--bear-rose);
 }
 
-/* ---- 卡片文字 ---- */
+/* ============================================
+   卡片文字 - 更温馨
+   ============================================ */
 .timeline-text {
-    color: var(--gray-700);
+    color: var(--bear-text);
     font-size: 0.95rem;
-    line-height: 1.9;
-    margin-bottom: 16px;
+    line-height: 2;
+    margin-bottom: 18px;
     white-space: pre-line;
 }
 
-/* ---- 图片网格 ---- */
+/* ============================================
+   图片网格 - 更圆润
+   ============================================ */
 .timeline-images {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 8px;
-    margin-top: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 10px;
+    margin-top: 16px;
 }
 
 .image-wrapper {
@@ -591,8 +696,13 @@ body::before {
     aspect-ratio: 1;
     overflow: hidden;
     border-radius: var(--radius-sm);
-    background: var(--dora-bg);
+    background: var(--bear-bg);
     cursor: pointer;
+    transition: transform 0.3s var(--ease-out);
+}
+
+.image-wrapper:hover {
+    transform: scale(1.05);
 }
 
 .image-placeholder {
@@ -601,7 +711,7 @@ body::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--dora-bg) 0%, var(--dora-bg-alt) 100%);
+    background: linear-gradient(135deg, var(--bear-bg) 0%, var(--bear-bg-alt) 100%);
     border-radius: var(--radius-sm);
     z-index: 1;
     transition: opacity 0.4s ease;
@@ -613,10 +723,10 @@ body::before {
 }
 
 .placeholder-spinner {
-    width: 28px;
-    height: 28px;
-    border: 3px solid var(--dora-blue-pale);
-    border-top-color: var(--dora-blue);
+    width: 32px;
+    height: 32px;
+    border: 3px solid var(--bear-pink-light);
+    border-top-color: var(--bear-rose);
     border-radius: 50%;
     animation: spin 0.8s linear infinite;
 }
@@ -645,28 +755,30 @@ body::before {
 
 /* 单张图片更大 */
 .image-wrapper:only-child {
-    max-width: 200px;
+    max-width: 220px;
     aspect-ratio: auto;
-    height: 160px;
+    height: 170px;
 }
 
 .image-wrapper:only-child .timeline-image {
     object-fit: cover;
 }
 
-/* ---- 回到顶部按钮 ---- */
+/* ============================================
+   回到顶部按钮 - 更可爱
+   ============================================ */
 .back-to-top {
     position: fixed;
     bottom: 30px;
     right: 30px;
     z-index: 90;
-    width: 50px;
-    height: 50px;
+    width: 54px;
+    height: 54px;
     border-radius: 50%;
     border: none;
-    background: var(--dora-white);
+    background: linear-gradient(135deg, var(--bear-rose), var(--bear-pink));
     box-shadow: var(--shadow-md);
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     cursor: pointer;
     transition: all 0.4s var(--ease-spring);
     opacity: 0;
@@ -675,6 +787,7 @@ body::before {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 .back-to-top.visible {
@@ -684,29 +797,22 @@ body::before {
 }
 
 .back-to-top:hover {
-    transform: translateY(-4px) scale(1.08);
+    transform: translateY(-5px) scale(1.1);
     box-shadow: var(--shadow-lg);
-    background: var(--dora-blue);
+    background: linear-gradient(135deg, var(--bear-pink), var(--bear-rose));
 }
 
-/* ---- Footer ---- */
+/* ============================================
+   Footer - 更温馨
+   ============================================ */
 .footer {
     position: relative;
     z-index: 1;
     text-align: center;
-    padding: 50px 20px 40px;
-    background: linear-gradient(180deg, var(--dora-bg) 0%, var(--dora-blue) 100%);
-    margin-top: 60px;
+    padding: 60px 20px 50px;
+    background: linear-gradient(180deg, var(--bear-bg) 0%, var(--bear-brown-light) 100%);
+    margin-top: 80px;
     overflow: hidden;
-}
-
-.footer-bear-gif {
-    width: 80px;
-    height: 80px;
-    border-radius: 12px;
-    object-fit: cover;
-    margin-bottom: 12px;
-    box-shadow: 0 2px 12px rgba(0,0,0,.12);
 }
 
 .footer::before {
@@ -729,12 +835,26 @@ body::before {
 .footer-characters {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-bottom: 16px;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-bear-gif {
+    width: 90px;
+    height: 90px;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 4px 16px rgba(0,0,0,.1);
+    transition: transform 0.3s var(--ease-bounce);
+}
+
+.footer-bear-gif:hover {
+    transform: scale(1.1) rotate(-5deg);
 }
 
 .footer-chara {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     display: inline-block;
     animation: footer-bounce 2s var(--ease-out) infinite;
 }
@@ -744,38 +864,41 @@ body::before {
 
 @keyframes footer-bounce {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-6px); }
+    50% { transform: translateY(-8px); }
 }
 
 .footer-text {
-    color: var(--dora-white);
-    font-size: 1.05rem;
+    color: var(--bear-cream);
+    font-size: 1.1rem;
     font-weight: 500;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
 .heart {
     display: inline-block;
     animation: heartbeat 1.5s var(--ease-out) infinite;
-    color: var(--dora-red);
+    color: var(--bear-rose);
 }
 
 @keyframes heartbeat {
     0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.15); }
+    50% { transform: scale(1.2); }
 }
 
 .footer-small {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.88rem;
     font-style: italic;
+    letter-spacing: 0.5px;
 }
 
-/* ---- 灯箱 ---- */
+/* ============================================
+   灯箱 - 更柔和
+   ============================================ */
 .lightbox {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.92);
+    background: rgba(60, 50, 40, 0.92);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -783,7 +906,7 @@ body::before {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.4s ease, visibility 0.4s ease;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(12px);
 }
 
 .lightbox.active {
@@ -795,8 +918,8 @@ body::before {
     max-width: 88vw;
     max-height: 85vh;
     object-fit: contain;
-    border-radius: var(--radius-sm);
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    border-radius: var(--radius-md);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
     transform: scale(0.92);
     transition: transform 0.4s var(--ease-out);
 }
@@ -807,15 +930,15 @@ body::before {
 
 .lightbox-close {
     position: absolute;
-    top: 16px;
-    right: 20px;
+    top: 20px;
+    right: 24px;
     font-size: 2rem;
     color: white;
     background: rgba(255, 255, 255, 0.1);
     border: none;
     cursor: pointer;
-    width: 48px;
-    height: 48px;
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -826,7 +949,7 @@ body::before {
 
 .lightbox-close:hover {
     background: rgba(255, 255, 255, 0.2);
-    transform: rotate(90deg);
+    transform: rotate(90deg) scale(1.1);
 }
 
 .lightbox-prev,
@@ -840,8 +963,8 @@ body::before {
     border: none;
     cursor: pointer;
     width: 54px;
-    height: 80px;
-    border-radius: 12px;
+    height: 84px;
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -859,57 +982,70 @@ body::before {
 .lightbox-next:hover {
     background: rgba(255, 255, 255, 0.18);
     opacity: 1 !important;
+    transform: translateY(-50%) scale(1.05);
 }
 
-.lightbox-prev  { left: 16px; }
-.lightbox-next  { right: 16px; }
+.lightbox-prev  { left: 20px; }
+.lightbox-next  { right: 20px; }
 
 .lightbox-counter {
     position: absolute;
-    bottom: 20px;
+    bottom: 24px;
     left: 50%;
     transform: translateX(-50%);
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 0.85rem;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 4px 14px;
-    border-radius: 999px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.88rem;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 6px 18px;
+    border-radius: var(--radius-full);
     font-weight: 500;
+    letter-spacing: 0.5px;
 }
 
-/* ---- 空状态 ---- */
+/* ============================================
+   空状态 - 更可爱
+   ============================================ */
 .timeline-empty {
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
     color: var(--gray-500);
 }
 
 .timeline-empty-icon {
-    font-size: 4rem;
-    margin-bottom: 16px;
+    font-size: 5rem;
+    margin-bottom: 20px;
     display: block;
+    animation: empty-bounce 2s var(--ease-out) infinite;
+}
+
+@keyframes empty-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
 }
 
 .timeline-empty-text {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
+    color: var(--bear-text-light);
 }
 
-/* ---- 滚动条美化 ---- */
+/* ============================================
+   滚动条美化 - 更柔和
+   ============================================ */
 ::-webkit-scrollbar {
     width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--dora-bg);
+    background: var(--bear-bg);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, var(--dora-blue), var(--dora-blue-light));
+    background: linear-gradient(180deg, var(--bear-pink-light), var(--bear-honey-light));
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--dora-blue-dark);
+    background: linear-gradient(180deg, var(--bear-pink), var(--bear-honey));
 }
 
 /* ============================================
@@ -919,20 +1055,20 @@ body::before {
 @media (max-width: 768px) {
     /* 时间轴改为左侧布局 */
     .timeline::before {
-        left: 20px;
+        left: 24px;
     }
 
     .timeline-item {
         width: 100%;
         left: 0 !important;
         text-align: left !important;
-        padding-left: 52px;
+        padding-left: 56px;
         padding-right: 0;
     }
 
     .timeline-item:nth-child(odd) .timeline-dot,
     .timeline-item:nth-child(even) .timeline-dot {
-        left: 10px;
+        left: 12px;
         right: auto;
     }
 
@@ -941,43 +1077,49 @@ body::before {
         left: -10px;
         right: auto;
         border-width: 10px 10px 10px 0;
-        border-color: transparent var(--dora-white) transparent transparent;
+        border-color: transparent var(--bear-surface) transparent transparent;
     }
 
     /* 月份导航横向滚动 */
     .month-nav-inner {
-        gap: 6px;
+        gap: 8px;
     }
 
     .month-nav-btn {
-        padding: 6px 16px;
-        font-size: 0.82rem;
+        padding: 8px 18px;
+        font-size: 0.85rem;
     }
 
     /* Hero 调整 */
     .hero {
-        padding: 36px 16px 30px;
+        padding: 40px 16px 35px;
     }
 
     .hero-title-line {
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
 
     .hero-bear-img {
-        width: 100px;
+        width: 120px;
+    }
+
+    .hero-bear::before,
+    .hero-bear::after {
+        width: 28px;
+        height: 28px;
     }
 
     .hero-wave svg {
-        height: 30px;
+        height: 40px;
     }
 
     /* 卡片调整 */
     .timeline-card {
-        padding: 18px;
+        padding: 20px;
     }
 
     .timeline-title {
-        font-size: 1.05rem;
+        font-size: 1.1rem;
     }
 
     .timeline-text {
@@ -991,30 +1133,30 @@ body::before {
 
     .image-wrapper:only-child {
         max-width: 100%;
-        height: 180px;
+        height: 190px;
     }
 
     /* 灯箱按钮变小 */
     .lightbox-prev,
     .lightbox-next {
-        width: 40px;
-        height: 60px;
+        width: 42px;
+        height: 66px;
         font-size: 2rem;
     }
 
-    .lightbox-prev  { left: 6px; }
-    .lightbox-next  { right: 6px; }
+    .lightbox-prev  { left: 8px; }
+    .lightbox-next  { right: 8px; }
 
     /* 回到顶部 */
     .back-to-top {
         bottom: 20px;
         right: 20px;
-        width: 44px;
-        height: 44px;
-        font-size: 1.2rem;
+        width: 48px;
+        height: 48px;
+        font-size: 1.3rem;
     }
 
-        /* 飘浮装饰隐藏部分 */
+    /* 飘浮装饰隐藏部分 */
     .deco-bear-5,
     .deco-bear-6 {
         display: none;
@@ -1023,30 +1165,36 @@ body::before {
 
 @media (max-width: 480px) {
     .hero-title-line {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
     .hero-title-sub {
-        font-size: 1rem;
+        font-size: 1.05rem;
     }
 
     .hero-bear-img {
-        width: 80px;
+        width: 100px;
+    }
+
+    .hero-bear::before,
+    .hero-bear::after {
+        width: 22px;
+        height: 22px;
     }
 
     .timeline-images {
         grid-template-columns: repeat(2, 1fr);
-        gap: 6px;
+        gap: 8px;
     }
 
     .month-nav-btn {
-        padding: 5px 12px;
-        font-size: 0.78rem;
+        padding: 6px 14px;
+        font-size: 0.8rem;
     }
 
     .timeline-date {
-        font-size: 0.75rem;
-        padding: 4px 12px;
+        font-size: 0.78rem;
+        padding: 5px 14px;
     }
 }
 
