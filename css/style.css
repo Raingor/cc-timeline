@@ -149,11 +149,11 @@ body::before {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(255, 249, 242, 0.92);
-    backdrop-filter: blur(20px) saturate(1.8);
-    -webkit-backdrop-filter: blur(20px) saturate(1.8);
-    border-bottom: 2px solid rgba(232, 213, 196, 0.4);
-    padding: 14px 0;
+    background: rgba(255, 249, 242, 0.94);
+    backdrop-filter: blur(18px) saturate(1.5);
+    -webkit-backdrop-filter: blur(18px) saturate(1.5);
+    border-bottom: 1px solid rgba(232, 213, 196, 0.55);
+    padding: 10px 0;
     transition: box-shadow 0.3s ease;
 }
 
@@ -162,68 +162,43 @@ body::before {
 }
 
 .month-nav-inner {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
-    gap: 10px;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
-}
-
-.month-nav-inner::-webkit-scrollbar {
-    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
 }
 
 .month-nav-btn {
     flex-shrink: 0;
-    padding: 10px 22px;
-    border: 2.5px solid var(--bear-brown-light);
-    border-radius: var(--radius-full);
-    background: transparent;
+    padding: 8px 15px;
+    border: 1px solid rgba(160, 139, 111, 0.34);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.58);
     color: var(--bear-brown);
     font-family: var(--font-body);
-    font-size: 0.88rem;
+    font-size: 0.86rem;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.35s var(--ease-out);
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
     white-space: nowrap;
-    position: relative;
-    overflow: hidden;
-}
-
-.month-nav-btn::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, var(--bear-pink-light), var(--bear-honey-light));
-    opacity: 0;
-    transition: opacity 0.35s ease;
-    border-radius: var(--radius-full);
 }
 
 .month-nav-btn:hover {
     border-color: var(--bear-pink);
+    background: var(--bear-milk);
     color: var(--bear-rose);
-    transform: translateY(-2px) scale(1.03);
-    box-shadow: 0 4px 12px rgba(232, 93, 117, 0.15);
-}
-
-.month-nav-btn:hover::before {
-    opacity: 0.3;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(232, 93, 117, 0.12);
 }
 
 .month-nav-btn.active {
     background: linear-gradient(135deg, var(--bear-rose), var(--bear-pink));
     color: var(--bear-cream);
-    border-color: var(--bear-rose);
-    box-shadow: 0 4px 16px rgba(232, 93, 117, 0.25);
-    transform: translateY(-2px);
-}
-
-.month-nav-btn.active::before {
-    display: none;
+    border-color: transparent;
+    box-shadow: 0 3px 10px rgba(232, 93, 117, 0.2);
 }
 
 /* ============================================
@@ -281,30 +256,6 @@ body::before {
 
 .hero-bear-img:hover {
     transform: scale(1.1) rotate(-5deg);
-}
-
-/* 耳朵装饰 */
-.hero-bear::before,
-.hero-bear::after {
-    content: '';
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    background: var(--bear-brown);
-    border-radius: 50% 50% 40% 40%;
-    top: -5px;
-    z-index: -1;
-    border: 3px solid rgba(255,255,255,0.3);
-}
-
-.hero-bear::before {
-    left: 15px;
-    transform: rotate(-15deg);
-}
-
-.hero-bear::after {
-    right: 15px;
-    transform: rotate(15deg);
 }
 
 .hero-bear-shadow {
@@ -1080,14 +1031,13 @@ body::before {
         border-color: transparent var(--bear-surface) transparent transparent;
     }
 
-    /* 月份导航横向滚动 */
     .month-nav-inner {
-        gap: 8px;
+        gap: 7px;
     }
 
     .month-nav-btn {
-        padding: 8px 18px;
-        font-size: 0.85rem;
+        padding: 7px 12px;
+        font-size: 0.82rem;
     }
 
     /* Hero 调整 */
@@ -1101,12 +1051,6 @@ body::before {
 
     .hero-bear-img {
         width: 120px;
-    }
-
-    .hero-bear::before,
-    .hero-bear::after {
-        width: 28px;
-        height: 28px;
     }
 
     .hero-wave svg {
@@ -1176,20 +1120,19 @@ body::before {
         width: 100px;
     }
 
-    .hero-bear::before,
-    .hero-bear::after {
-        width: 22px;
-        height: 22px;
-    }
-
     .timeline-images {
         grid-template-columns: repeat(2, 1fr);
         gap: 8px;
     }
 
+    .month-nav-inner {
+        padding: 0 10px;
+        gap: 6px;
+    }
+
     .month-nav-btn {
-        padding: 6px 14px;
-        font-size: 0.8rem;
+        padding: 6px 10px;
+        font-size: 0.78rem;
     }
 
     .timeline-date {
