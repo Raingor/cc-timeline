@@ -1117,7 +1117,7 @@ function renderTimeline() {
             const globalIndex = timelineData.indexOf(item);
             html += `
                 <div class="timeline-item ${item.special ? 'special' : ''}"
-                     data-index="${globalIndex}" data-month="${month}">
+                     data-index="${globalIndex}" data-month="${month}" data-memory-id="${item.id}">
                     <div class="timeline-dot"></div>
                     <span class="timeline-date">${item.date}</span>
                     <div class="timeline-card">

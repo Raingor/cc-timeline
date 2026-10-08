@@ -904,7 +904,7 @@
                 var isSpecial = item.special;
                 var pageClass = isSpecial ? 'page page-special' : 'page';
 
-                html += '\n            <div class="' + pageClass + '" data-page="' + pageNum + '" data-entry="' + idx + '">\n                ';
+                html += '\n            <div class="' + pageClass + '" data-page="' + pageNum + '" data-entry="' + idx + '" data-memory-id="' + item.id + '">\n                ';
 
                 // 特辑标签
                 if (isSpecial) {
