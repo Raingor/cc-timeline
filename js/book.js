@@ -766,6 +766,60 @@
             title: '最开心的农历生日',
             content: '今天是我的农历生日。一大早，CC就发来一个生日红包，还附上了一个特别的链接——她用 AI 把我们一起经历过的每一段时光，都画成了漫画风的故事。看着那些熟悉的画面被重新记录下来，我真的感动得不得了。这会是我最开心、也最难忘的生日。比起盛大的安排，我更喜欢这种平淡却用心的小惊喜。知足常乐，我很感恩：我爱的人，也同样爱着我。Best wishes！',
             images: ['images/9_22_birthday_red_packet.webp'], special: true
+        },
+        {
+            id: 125, date: '2026年10月1日',
+            title: '尾角湾：暮色里的牵挂与安心',
+            content: '原本计划去惠州，想到假期要经过广州和深圳，我们临时转向江门台山。一路虽有些小堵，但车里说说笑笑，赶在日落前抵达尾角湾。放好行李，我们就奔向海边，踩着浮板、追着落日拍照，海风把旅途的疲惫轻轻吹散。\n\n我看见不远处的孤岛，想走过去看看。CC有些担心，我便让她留在岸边等我。走到尽头时，我踢到了石头，回头看见她还站在那里，便打开手机闪光灯，一边挥手一边往回走，只想让她知道我一直惦记着她。回到岸边，她眼里有担忧，也有安心和信任。后来我们在海边吃烧烤，再回民宿休息。\n\n【CC来信·CC提供】去年重游尾角湾时，CC曾带着失落看海、看孤岛，也怀疑自己是否值得幸福；这一次再站在同一片海边，她看见远处的我举着手机闪光灯朝她挥手，心里不再空荡。她把这份变化写成了从“失落沙洲”到“快乐金沙洲”。邮件附上的三张上下对比照片也由CC提供：上方是2025年，下方是2026年。',
+            images: ['images/10_1_drive_to_taishan.webp', 'images/10_1_tailbay_arrival.webp', 'images/10_1_tailbay_couple.webp', 'images/10_1_shoreline.webp', 'images/10_1_sunset_beach.webp', 'images/10_1_dusk_sky.webp', 'images/10_1_seaside_evening.webp', 'images/10_1_beach_barbecue.webp', 'images/10_1_cc_letter_comparison_1.webp', 'images/10_1_cc_letter_comparison_2.webp', 'images/10_1_cc_letter_comparison_3.webp'], special: true
+        },
+        {
+            id: 126, date: '2026年10月2日',
+            title: '北盛街：把老街慢慢走一遍',
+            content: '第二天，我们在台山北盛街的老巷里慢慢闲逛。街边店铺和老建筑藏着许多细节，我们走走停停、来回穿梭，仿佛热闹的假期里只剩下彼此的脚步声和笑声。中午尝了当地的黄鳝煲仔饭，也把这份惬意留在了相机里。',
+            images: ['images/10_2_beisheng_street_detail.webp', 'images/10_2_beisheng_street_shop.webp', 'images/10_2_beisheng_eel_rice.webp', 'images/10_2_beisheng_lunch.webp', 'images/10_2_beisheng_architecture_1.webp', 'images/10_2_beisheng_architecture_2.webp', 'images/10_2_beisheng_dessert.webp', 'images/10_2_beisheng_map.webp', 'images/10_2_beisheng_lane_1.webp', 'images/10_2_beisheng_lane_2.webp', 'images/10_2_beisheng_street.webp', 'images/10_2_beisheng_lane_3.webp', 'images/10_2_beisheng_building.webp'], special: false
+        },
+        {
+            id: 127, date: '2026年10月2日',
+            title: '台山塔上的一段清静时光',
+            content: '走到台山塔入口才发现，通往塔下的坡又陡又长。我们折回去取车，直接开到塔下，再搭电梯登上塔顶。台山市区、远处的山峦与海岸线一览无余。塔上人不多，我们带着咖啡和吃的，找了张桌子坐下来，安安静静地享受只有两个人的风景。',
+            images: ['images/10_2_taishan_tower_selfie.webp', 'images/10_2_taishan_tower_rest.webp', 'images/10_2_taishan_tower_food.webp', 'images/10_2_taishan_tower.webp'], special: false
+        },
+        {
+            id: 128, date: '2026年10月2日',
+            title: '开平夜晚：两杯酒和一段散步',
+            content: '晚上开车去开平入住。吃过晚饭，我们在附近的小酒吧坐了坐，各自点了两大杯酒。我的那杯苦得直皱眉，最后还是喝完了。夜里凉爽，我们散着步回酒店，把这一天收在轻松舒服的夜色里。',
+            images: ['images/10_2_kaiping_evening_drink.webp', 'images/10_2_kaiping_evening_dinner.webp'], special: false
+        },
+        {
+            id: 129, date: '2026年10月3日',
+            title: '开平碉楼：把答应你的地方走到',
+            content: '第三天，我们去了开平碉楼群。此前CC就提过想一起看看，只是上次时间不够；这次终于把这份约定补上。我们在一座座碉楼间慢慢走，欣赏各不相同的建筑细节，也听着它们背后的故事，眼前的风景因此多了一份等待已久的意义。',
+            images: ['images/10_3_kaiping_road.webp', 'images/10_3_diaolou_village_1.webp', 'images/10_3_diaolou_detail.webp', 'images/10_3_diaolou_together.webp', 'images/10_3_diaolou_field.webp', 'images/10_3_diaolou_village_2.webp'], special: false
+        },
+        {
+            id: 130, date: '2026年10月3日',
+            title: '赤坎古镇与夜色中的火秀',
+            content: '下午四点左右，我们转去赤坎古镇，在老街与旧建筑间散步，仿佛走进了另一段时光。晚上看了期待已久的火秀，排队时虽然有些混乱，表演却十分精彩：火焰随着音乐和灯光在夜空中舞动。散场后，我们又沿着古镇小巷走了一段。连日奔走的疲惫这才追上来，我们决定回小榄住下；洗过热水澡，躺在床上回想这几天，心里满是满足。',
+            images: ['images/10_3_chikan_fire_show_1.webp', 'images/10_3_chikan_fire_show_2.webp', 'images/10_3_chikan_night_together.webp', 'images/10_3_chikan_night_scene.webp', 'images/10_3_chikan_lights.webp', 'images/10_3_chikan_lanterns.webp'], special: false
+        },
+        {
+            id: 131, date: '2026年10月4日',
+            title: '把脚步放慢的一天',
+            content: '第四天没有再赶着打卡，我们悠哉地休息了一天。连续几天的旅途里，偶尔停下来什么也不急着做，也是一种舒服的相处。',
+            images: [], special: false
+        },
+        {
+            id: 132, date: '2026年10月5日',
+            title: '顺德家庭日：和家人一起吃顿饭',
+            content: '假期最后一天，我们和CC家人去了顺德王府井和金榜街，尝了双皮奶，又去顺丰烧鸡吃了顿饭。逛街、吃饭、闲聊，是很踏实的一次家庭日。CC的假期也在这天结束了，虽然舍不得，回程路上聊起这几天时，心里更多的是满足与快乐。',
+            images: ['images/10_5_family_dinner.webp'], special: false
+        },
+        {
+            id: 133, date: '2026年10月',
+            title: '十月——五天、594公里，和你一起的远行',
+            content: '原本计划去惠州，我们考虑到假期交通，临时转向江门。五天的旅程从海边、老街、台山塔与开平碉楼，走到赤坎古镇，再回到顺德与家人相聚。目的地之外，路上的说笑、一起吃过的饭和一路留下的照片，才是这趟旅行最舍不得收起来的部分。\n\n【CC来信提供】CC在10月8日的邮件中记下，这趟车一共行驶了594公里。她写下的假期路线还包括稻田、碉楼街、罗浮宫和金榜街；关于重游尾角湾时从失落走向安心的心情，也来自她的来信。',
+            images: [], special: true
         }
     ];
 
@@ -778,17 +832,17 @@
     }
 
     function getMonthEmoji(month) {
-        var map = { 3: '🌸', 4: '🌿', 5: '☀️', 6: '💕', 7: '🎆', 8: '🎂', 9: '🎁' };
+        var map = { 3: '🌸', 4: '🌿', 5: '☀️', 6: '💕', 7: '🎆', 8: '🎂', 9: '🎁', 10: '🍁' };
         return map[month] || '📅';
     }
 
     function getMonthName(month) {
-        var map = { 3: '三月·初遇', 4: '四月·热恋', 5: '五月·情深', 6: '六月·升温', 7: '七月·绚烂', 8: '八月·甜蜜', 9: '九月·相守' };
+        var map = { 3: '三月·初遇', 4: '四月·热恋', 5: '五月·情深', 6: '六月·升温', 7: '七月·绚烂', 8: '八月·甜蜜', 9: '九月·相守', 10: '十月·同行' };
         return map[month] || month + '月';
     }
 
     function getMonthIndex(month) {
-        var map = { 3: 0, 4: 1, 5: 2, 6: 3, 7: 4, 8: 5, 9: 6 };
+        var map = { 3: 0, 4: 1, 5: 2, 6: 3, 7: 4, 8: 5, 9: 6, 10: 7 };
         return map[month] !== undefined ? map[month] : -1;
     }
 
