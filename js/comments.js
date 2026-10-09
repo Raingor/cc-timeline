@@ -60,14 +60,14 @@
         text.className = 'love-comments-input';
         text.placeholder = '写下这段回忆里的悄悄话…';
         text.maxLength = 2000;
-        text.rows = 2;
+        text.rows = 3;
         text.required = true;
         text.setAttribute('aria-label', '评论内容');
 
         const submit = document.createElement('button');
         submit.className = 'love-comments-submit';
         submit.type = 'submit';
-        submit.textContent = '发送评论';
+        submit.textContent = '发出回声';
         form.append(author, text, submit);
         section.append(heading, list, status, form);
 
@@ -150,7 +150,7 @@
             if (!comments.length) {
                 const empty = document.createElement('p');
                 empty.className = 'love-comments-empty';
-                empty.textContent = '还没有评论，来写下第一句吧。';
+                empty.textContent = '这段回忆还没有留言，来留下第一句吧。';
                 panel.list.appendChild(empty);
                 return;
             }
