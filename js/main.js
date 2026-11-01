@@ -1090,6 +1090,116 @@ const timelineData = [
         content: '原本计划去惠州，我们考虑到假期交通，临时转向江门。五天的旅程从海边、老街、台山塔与开平碉楼，走到赤坎古镇，再回到顺德与家人相聚。目的地之外，路上的说笑、一起吃过的饭和一路留下的照片，才是这趟旅行最舍不得收起来的部分。',
         images: [],
         special: true
+    },
+    {
+        "id": 135,
+        "date": "2026年10月24日",
+        "title": "东莞烧鹅濑粉：心心念念的一口",
+        "content": "一大早，我们就开车去东莞，吃心心念念的烧鹅濑粉。这次有CC一起，干脆直接点了一个大烧鹅腿，看着就很满足。她也觉得特别好吃，一大口烧鹅配着濑粉，把这趟莞深小旅行的开场变得格外香。惦记了那么久的味道，终于能和她一起尝到，开心又满足 🦢",
+        "images": [
+            "images/october_weekends/IMG_7948.webp"
+        ],
+        "special": false
+    },
+    {
+        "id": 136,
+        "date": "2026年10月24日",
+        "title": "绕了一点路，终于吃到芋泥蛋糕",
+        "content": "吃过烧鹅濑粉，我们接着往深圳出发，想去喜茶 LAB 吃芋泥蛋糕。一开始导航到了欢乐港湾，到了才发现走错了地方——原来要去的是欢乐海岸。后来我们还尝试了无人驾驶打车，辗转到了欢乐海岸附近，终于找到这份心心念念的下午茶。芋泥软滑、香气浓郁，配着蛋糕刚刚好。虽然绕了一点路，但和CC一起把想吃的东西找到，也成了旅途中好玩的一部分 🍰",
+        "images": [
+            "images/october_weekends/IMG_4059.webp",
+            "images/october_weekends/IMG_7959.webp"
+        ],
+        "special": false
+    },
+    {
+        "id": 137,
+        "date": "2026年10月24日",
+        "title": "深圳湾：沿着海边慢慢走",
+        "content": "吃完芋泥蛋糕，我们去了深圳湾公园散步。天气很好，阳光和海风都很舒服，沿着海边一边聊天、一边拍照，还看见有人在放风筝。原本计划一路走到人才公园，没想到越走越远，也越走越累。走到大概三分之二时，我提议不如打车去南山书城附近吃蛙蛙，CC却坚持想继续走下去。于是我们又牵着手往前走，没想到前面竟然藏着一份意外的惊喜 🌅",
+        "images": [
+            "images/october_weekends/IMG_7974.webp",
+            "images/october_weekends/IMG_7975.webp"
+        ],
+        "special": false
+    },
+    {
+        "id": 138,
+        "date": "2026年10月24日",
+        "title": "多走一段路，遇见梁静茹的歌声",
+        "content": "终于走到人才公园坐下来休息，忽然听见体育馆里传来歌声。打开小红书一看，才知道原来是梁静茹的演唱会！CC也喜欢她的歌，我们就这样坐在场馆外，一边歇脚，一边听着歌声从里面传出来。原来她刚才坚持多走的那段路，让我们碰上了这么舒服又意外的时刻。休息够了，我们才打车去南山书城附近吃蛙蛙，再回酒店好好休息。一天走得很累，心里却很开心 🎶",
+        "images": [
+            "images/october_weekends/IMG_7979.webp"
+        ],
+        "special": false
+    },
+    {
+        "id": 139,
+        "date": "2026年10月25日",
+        "title": "繁楼早茶：一起慢慢吃早餐",
+        "content": "第二天，我们去了深圳的老字号茶楼「繁楼」喝早茶。点心款式很多，味道也很好，虾饺和烧卖尤其让人难忘。桌上摆满了想吃的点心，自嘲熊也跟着我们一起打卡。旅途中不用急着赶路，和CC坐下来慢慢吃一顿早茶，就是很舒服的开始 🥢",
+        "images": [
+            "images/october_weekends/IMG_4067.webp",
+            "images/october_weekends/IMG_8004.webp",
+            "images/october_weekends/IMG_8005.webp",
+            "images/october_weekends/IMG_8009.webp"
+        ],
+        "special": false
+    },
+    {
+        "id": 140,
+        "date": "2026年10月25日",
+        "title": "K11闲逛与躲太阳的咖啡时光",
+        "content": "喝完早茶，我们去了K11逛街。商场很大，品牌也多，一路走走看看，还留下了镜子前的合照。可想找个地方吃点东西、喝点饮料时，才发现座位并不好找，外面又晒得厉害。下午我们便转去旁边的商区喝咖啡，找个地方坐下歇歇脚。看风景、拍照、一起商量下一站，都是这趟小旅行里很自在的小片段 ☕",
+        "images": [
+            "images/october_weekends/IMG_8016.webp",
+            "images/october_weekends/IMG_8023.webp",
+            "images/october_weekends/IMG_8027.webp",
+            "images/october_weekends/IMG_8028.webp"
+        ],
+        "special": false
+    },
+    {
+        "id": 141,
+        "date": "2026年10月25日",
+        "title": "等一顿漂亮饭，陪你看日落",
+        "content": "傍晚翻着美团找晚餐，我发现一家适合吃「漂亮饭」的餐厅。虽然要排队，我们还是决定等等看。上到二楼坐下，正好可以一起看日落，店里的装修和环境都很舒服。食物一道道端上来，我们一边吃、一边聊天，也替对方和桌上的美食拍了好多照片。排队的小等待，换来和CC坐在一起慢慢享受的晚餐，觉得很值得 🍽️",
+        "images": [
+            "images/october_weekends/IMG_4090.webp",
+            "images/october_weekends/IMG_8078.webp",
+            "images/october_weekends/IMG_8081.webp",
+            "images/october_weekends/IMG_8083.webp",
+            "images/october_weekends/IMG_8084.webp",
+            "images/october_weekends/IMG_8087.webp",
+            "images/october_weekends/IMG_4101.webp",
+            "images/october_weekends/IMG_4102.webp",
+            "images/october_weekends/IMG_8088.webp"
+        ],
+        "special": false
+    },
+    {
+        "id": 142,
+        "date": "2026年10月25日",
+        "title": "晚风里的K11，莞深小旅行收尾",
+        "content": "吃完晚餐，我们沿着K11外面的水边又走了一圈。夜风吹过来特别舒服，白天的疲惫也缓下来一点。拍下亮着灯的建筑，也留下一张靠在一起的夜晚合照，然后才开车回广州，结束这次莞深小旅行。两天里吃了好多好吃的、看了好多风景，也走了好多路。虽然很累，可身边是CC，就觉得这一趟特别开心、特别难忘 🌙💕",
+        "images": [
+            "images/october_weekends/IMG_4103.webp",
+            "images/october_weekends/IMG_8096.webp",
+            "images/october_weekends/IMG_8098.webp"
+        ],
+        "special": false
+    },
+    {
+        "id": 143,
+        "date": "2026年10月31日",
+        "title": "肇庆三轮车：乡间小路上的快乐",
+        "content": "这天，我陪CC和她的家人一起去了肇庆。最难忘的，是下午坐着三轮车去赶市集——第一次坐三轮车，看着沿途的乡间风景，感觉特别舒服、特别新鲜。市集很热闹，回她家人朋友家的路上，竟然还让我试着开三轮车！真的好玩又自在，我们就这样一边沿着小路往前开，一边聊天、看风景。没有复杂的安排，这段小小的三轮车旅程，却成了这一天最想记住的快乐 🛺",
+        "images": [
+            "images/october_weekends/IMG_4273.webp",
+            "images/october_weekends/IMG_4274.webp",
+            "images/october_weekends/IMG_4279.webp"
+        ],
+        "special": false
     }
 ];
 
